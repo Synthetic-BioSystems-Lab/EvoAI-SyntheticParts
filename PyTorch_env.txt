@@ -1,0 +1,10 @@
+Anaconda Environment Details:
+
+Python 3.12.7
+
+Packages: 
+-numpy 
+-pandas
+-pytorch 
+-torchvision
+-matplotlib
