@@ -1,0 +1,401 @@
+# License,,,,,,,,,,
+#,# RegulonDB is free for academic/noncommercial use,,,,,,,,,
+# User is not entitled to change or erase data sets of the RegulonDB,,,,,,,,,,
+"# database or to eliminate copyright notices from RegulonDB. Furthermore,",,,,,,,,,,
+# User is not entitled to expand RegulonDB or to integrate RegulonDB partly,,,,,,,,,,
+"# or as a whole into other databank systems, without prior written consent",,,,,,,,,,
+# from CCG-UNAM.,,,,,,,,,,
+# Please check the license at https://regulondb.ccg.unam.mx/manual/aboutUs/terms-conditions,,,,,,,,,,
+# Citation,,,,,,,,,,
+#,"# Heladia Salgado, Socorro Gama-Castro, et al., RegulonDB v12.0: a comprehensive resource of transcriptional regulation in E. coli K-12,",,,,,,,,,
+"# Nucleic Acids Research, 2023;, gkad1072, https://doi.org/10.1093/nar/gkad1072",,,,,,,,,,
+# RegulonDB Release: 13.0,,,,,,,,,,
+# Contact,,,,,,,,,,
+#,email:regulondb@ccg.unam.mx,,,,,,,,,
+#Date:,,,,,,,,,,
+#,11-13-2024,,,,,,,,,
+## Columns:,,,,,,,,,,
+## (1) Terminator identifier assigned by RegulonDB,,,,,,,,,,
+## (2) Terminator left end position in the genome,,,,,,,,,,
+## (3) Terminator right end position in the genome,,,,,,,,,,
+## (4) DNA strand where the terminator is located,,,,,,,,,,
+## (5) Terminator sequence,,,,,,,,,,
+## (6) Transcription unit(s) related to the terminator   *see note1,,,,,,,,,,
+## (7) Terminator type,,,,,,,,,,
+## (8) Operon name,,,,,,,,,,
+## (9) References (PubMed ID),,,,,,,,,,
+## (10) Evidence that supports the existence of the terminator,,,,,,,,,,
+"## (11) Evidence confidence level (Confirmed, Strong, Weak)",,,,,,,,,,
+"## note1: If there are more than one TU with the same name, it is because the promoter associated to the TU is different",,,,,,,,,,
+1)terminatorId,2)leftEndPos,3)rightEndPos,4)strand,5)sequence,6)relatedTus,7)type,8)operonName,9)pmids,10)evidences,11)confidenceLevel
+RDBECOLITMC00001,3407286,3407302,forward,agcgtcaaaaGGCCGGATTTTCCGGCCttttttatta,accBC:accBp2;accBC:accBp1,rho-independent,accBC,8226664,,None 
+RDBECOLITMC00002,3418143,3418177,forward,gataaatcagAAACATAAAGGCGCTTTCGGGTGCCTTTATTATTTccagtgaaac,acrEF:acrEp,rho-independent,acrEF,1720861,,None 
+RDBECOLITMC00003,4639539,4639572,reverse,taccaccgtcAAAAAAAACGGCGCTTTTTAGCGCCGTTTTTATTtttcaacctt,arcA:arcAp1;arcA:arcAp2;arcA:arcAp3;arcA:arcAp4;arcA:arcAp6;arcA:arcAp7;arcA:arcAp5,rho-independent,arcA,2984198,,None 
+RDBECOLITMC00004,2738912,2738940,forward,ctgatgaaaaGGTGCCGGATGATGTGAATCATCCGGCACtggattatta,pheLA:pheLp;aroF-tyrA:aroFp,rho-independent,pheLA;aroF-tyrA,6396419,,None 
+RDBECOLITMC00005,786795,786821,forward,tagcaacaaaAAAGCCGACTCACTTGCAGTCGGCTTTctcattttaa,aroG:aroGp,rho-independent,aroG,"1970563, 6125934",,None 
+RDBECOLITMC00006,1789487,1789510,forward,tctgaatgcgTGCCCATTCCTGACGGAATGGGCAtttctgcgca,aroH:aroHp2;aroH:aroHp1,rho-independent,aroH,1677907,,None 
+RDBECOLITMC00007,120144,120168,reverse,atctctctacGCCCTCACCCGTACAGGGTGAGGGCaataatcttt,aroP:aroPp1;aroP:aroPp2,rho-independent,aroP,2408019,,None 
+RDBECOLITMC00008,454844,454865,forward,gattttatgaAAAACGGCCTGCGGGCCGTTTTgttttgtctg,bolA:bolAp2;bolA:bolAp;bolA:bolAp1,rho-independent,bolA,2684651,,None 
+RDBECOLITMC00009,4600139,4600157,reverse,ttctgtgctgTGCCATTGCCGCCAGCGCAttaatttcca,dnaTC:dnaTp;yjjB-dnaTC:yjjBp,rho-independent,yjjB-dnaTC-yjjA,2844800,,None 
+RDBECOLITMC00010,4542851,4542902,forward,tgtggctcgaCGCATCTTCCTCATTCTTCTCTCCAAAAACCACCTCATGCAATATAAACATCtataaataaa,fimE:fimEp,rho-dependent,fimE,16321930,,None 
+RDBECOLITMC00011,3411593,3411626,forward,tgcttgattaAAAAGGCGCTACTCGGCATGGGGAAGCGCCTTTTttataggtgt,dusB-fis:dusBp,rho-independent,dusB-fis,1459953,,None 
+RDBECOLITMC00012,2684075,2684093,reverse,tgatcatcaaGGCTTCCTTCGGGAAGCCTttctacgtta,glyA:glyAp,rho-independent,glyA,6300791,,None 
+RDBECOLITMC00013,2630906,2630933,reverse,atgaatgaacAAAACCCTCTGTTACTACAGAGGGTTTTttatcttcaa,guaBA:guaBp,rho-independent,guaBA,3894345,,None 
+RDBECOLITMC00014,1795216,1795239,reverse,gatctaactaAAAAGGCCGCTCTGCGGCCTTTTTtcttttcact,pheMST-ihfA:pheMp;ihfA:ihfAp4,rho-independent,thrS-infC-rpmI-rplT-pheMST-ihfA,2991205,,None 
+RDBECOLITMC00015,3957062,3957123,forward,ggttacgcacCGGTTCGGGGCTGTTTTCCAGCACCACTTCCGGCAACAATGCCACGCCACAGCCGAGTGCCAccatcgatac,ilvA:ilvAp;ilvLXG_1G_2MEDA:ilvLp1;ilvLXG_1G_2MEDA:ilvLp2;ilvEDA:ilvEp3,rho-dependent,ilvLXG_1G_2MEDA,2642900,,None 
+RDBECOLITMC00016,3318072,3318087,reverse,ttatataaagCCCCGATTTATCGGGGttttttgtta,metY:metYp2;metY:metYp1,rho-independent,metY-yhbC-nusA-infB-rbfA-truB-rpsO-pnp,"12824337, 19706412, 6364142",,None 
+RDBECOLITMC00017,3318031,3318043,reverse,cagaataactGGGCTTTAGGCCCtttttttatg,metY:metYp2;metY:metYp1,rho-independent,metY-yhbC-nusA-infB-rbfA-truB-rpsO-pnp,6364142,,None 
+RDBECOLITMC00018,2311610,2311624,reverse,atcgaacaaaGGGCCTGCGGGCCCTtttttcattg,ompC:ompCp1;ompC:ompCp2;ompC:ompCp3,rho-independent,ompC,6304064,,None 
+RDBECOLITMC00019,1799161,1799176,reverse,gcgcctgaaaGCCTCCCAGTGGAGGCtttttttgta,rplT-pheM:rplTp;pheM:pheMp,rho-independent,thrS-infC-rpmI-rplT-pheMST-ihfA,6317865,,None 
+RDBECOLITMC00020,3410029,3410042,forward,ccgattatttACGCAAATTTGCGTgccaaaattt,yhdT-panF-prmA:yhdTp,rho-independent,yhdT-panF-prmA,8226664,,None 
+RDBECOLITMC00021,217020,217051,reverse,gctgatgccaGAAAGGGTCCTGAATTTCAGGGCCCTTTTTTTacatggattg,proS:proSp,rho-independent,proS,1688424,,None 
+RDBECOLITMC00022,1366818,1366913,reverse,aatacaacttGCCGGATGCGGCGTGAATGCTTTATTCGGCATACATAATCAATACGTCGTTTGCAGGCCTGATAAGCGCAGCGCATCAGACATTATTGCGTTGGGCtattaatcgc,pspF:pspFp1;pspF:pspFp2;pspF:pspFp3,rho-independent,pspF,8606168,,None 
+RDBECOLITMC00023,1799363,1799382,reverse,gccagttgaaAGAGGGAGCTAGTCTCCCTCttttcgtttc,rpmI-rplT:rpmIp;infC-rpmI-rplT:infCp2;rplT:rplTp,rho-independent,thrS-infC-rpmI-rplT-pheMST-ihfA,6317865,,None 
+RDBECOLITMC00024,3311372,3311398,reverse,gtcagcttgaAAAAAGGGGCCACTCAGGCCCCCTTTTctgaaactcg,rpsO:rpsOp;sraG:sraGp,rho-independent,metY-yhbC-nusA-infB-rbfA-truB-rpsO-pnp;sraG,3007765,,None 
+RDBECOLITMC00025,134756,134783,reverse,gtttaacggcTCTGGCGGAGCTCCCAGGCTCCGCCAGAtttatttact,speD:speDp;yacC-speED:yacCp,rho-independent,yacC-speED,,,None 
+RDBECOLITMC00026,1825057,1825126,reverse,ttcagccaaaAAACTTAAGACCGCCGGTCTTGTCCACTACCTTGCAGTAATGCGGTGGACAGGATCGGCGGTTTTCTTTTctcttctcaa,spy:spyp,rho-independent,spy,9068658,,None 
+RDBECOLITMC00027,20771,20784,reverse,tgtgaaaaagCCCGCGCAAGCGGGtttttttatg,rpsT:rpsTp1;rpsT:rpsTp2,rho-independent,rpsT,2429258,,None 
+RDBECOLITMC00028,4236159,4236209,forward,taaagtatgtATCCCCAAAATAATTCGAGTCATTGCATCTGTGGCTAGAAGTATGAAGGGAttaaccataa,yjbE:yjbEp1,rho-independent,yjbEFGH,,,None 
+RDBECOLITMC00029,4633111,4633144,forward,taagacgtggCGCATCAGGCATCGTGCACCGAATGCCGGATGCGgcgtgaacgc,trpR:trpRp,rho-independent,trpR,7012834,,None 
+RDBECOLITMC00030,2033715,2033731,forward,tattttttggGCCGGCATGATGCCGGCttttttttat,rseX:rseXp,rho-independent,rseX,16513633,,None 
+RDBECOLITMC00031,3046126,3046145,reverse,actattttctAAAGGCGCTTCGGCGCCTTTttagtcagat,gcvP:gcvPp;gcvTHP:gcvTp,rho-independent,gcvTHP,8181752,,None 
+RDBECOLITMC00032,360253,360278,forward,ttacccgcaaAGTGCGCTGCTGCTTAGCAGCGCACTgcttggtggg,cynTS:cynTp,rho-independent,cynTSX,3049588,,None 
+RDBECOLITMC00033,1645034,1645049,reverse,cccgcacttaACCCGCTTCGGCGGGTttttgttttt,relBE-hokD:relBp,rho-independent,relBE-hokD,2990907,,None 
+RDBECOLITMC00034,3400005,3400036,reverse,taatcggatgCAGGCAGGGGAAGTGTCTGTTTACCCTGCCTGgtctgatacg,mreB:mreBp1;mreB:mreBp2;mreB:mreBp3,rho-independent,mreBCD,17090951,,None 
+RDBECOLITMC00035,27252,27279,forward,aagttatgcgAAAATGCCGGTCTTGTTACCGGCATTTTttatggagaa,lsp-fkpB-ispH:lspAp;ileS-lspA-fkpB-ispH:ileSp1;ileS-lspA-fkpB-ispH:ileSp2;ileS-lspA-fkpB-ispH:ileSp3;ribF-ileS-lspA-fkpB-ispH:ribFp,rho-independent,ribF-ileS-lspA-fkpB-ispH,2011499,,None 
+RDBECOLITMC00036,185090,185111,reverse,agtatgcacaCGGGCAGCACGACGCTGCCCGAtttttttgca,dapD:dapDp,rho-independent,map-glnD-dapD,6094577,,None 
+RDBECOLITMC00037,29248,29272,forward,tattgattatAAAGGGCTTTAATTTTTGGCCCTTTtatttttggt,dapB:dapBp2;dapB:dapBp1,rho-independent,dapB,6094578,,None 
+RDBECOLITMC00038,4023516,4023537,forward,agaataaattCAACCGCCCGTCAGGGCGGTTGtcatatggag,tatABC:tatAp1,rho-independent,tatABC,10747959,,None 
+RDBECOLITMC00039,4178328,4178356,forward,cgttgcacaaGGCGTGAGATTGGAATACAATTTCGCGCCttttgttttt,secE-nusG:secEp,rho-independent,secE-nusG,2137819,,None 
+RDBECOLITMC00040,1146728,1146752,forward,aattattggcAAAAGGCAACCACAGGCTGCCTTTTtctttgactc,sraB:psrDp,rho-independent,sraB,11448770,,None 
+RDBECOLITMC00041,4162137,4162164,reverse,agtaaaacccATGCCGGATGCGCCAGCATCCGGCATAAtaccgattac,trmA:trmAp,rho-independent,trmA,1999392,,None 
+RDBECOLITMC00042,3699899,3699929,reverse,gcccggaccaGGCCGCAGGGGGGAAACTCTGCGGCCTTTTTcgttcttact,ldrD:ldrDp,rho-independent,ldrD,12123448,,None 
+RDBECOLITMC00043,1269039,1269067,forward,cttgaaaaatAAAGTATTAGCGTTCTGCGTTAAGACTTTtttcatgggt,ychQA-kdsA:ychQp;kdsA:kdsAp,rho-independent,ychQA-kdsA,3039295,,None 
+RDBECOLITMC00044,1898307,1898331,forward,tacttcttacTCGCCCATCTGCAACGGATGGGCGAatttataccc,sdaA:sdaAp,rho-independent,sdaA,2504697,,None 
+RDBECOLITMC00045,3191716,3191735,reverse,gcactgatatAACGGGCCTGATGGCCCGTTttagtgtttg,glgS:glgSp1;glgS:glgSp2,rho-independent,glgS,1324388,,None 
+RDBECOLITMC00046,3950320,3950471,forward,agaaaagacaAAATGACAGCCCTTCTACGAGTGATTAGCCTGGTCGTGATTAGCGTGGTGGTGATTATTATCCCACCGTGCGGGGCTGCACTTGGACGAGGAAAGGCTTAGAGATCAAGCCTTAACGAACTAAGACCCCCGCACCGAAAGGTCCGGGGGTTTtttttgacct,ilvL:ilvLp1;ilvL:ilvLp2,rho-independent,ilvLXG_1G_2MEDA,6154938,,None 
+RDBECOLITMC00047,3852835,3852982,reverse,cccaatgactACTTCCATGCTCAACGCAAAACTACTACCAACTGCGCCATCCGCCGCAGTGGTCGTCGTGCGTGTGGTGGTGGTCGTCGGCAATGCGCCGTAGGGACTGGAACAACACACGATTCCAAAACCCCGCCGGCGCAAACCGGGCGGGGTTTttcgtttaag,ivbL:ivbLp,rho-independent,ivbL-ilvBN-uhpABC,2578464,,None 
+RDBECOLITMC00048,3720286,3720313,forward,cacagaatctAAGATCCCTGCCATTTGGCGGGGATTTTtttatttgtt,cspA:cspAp1;cspA:cspAp2,rho-independent,cspA,17416651,,None 
+RDBECOLITMC00049,1322975,1322995,reverse,tcagatacccAGCCCGCCTAATGAGCGGGCTtttttttgaa,trpL:trpLp,rho-independent,trpLEDCBA,7038627,,None 
+RDBECOLITMC00050,2090108,2090140,forward,aacgcatgagAAAGCCCCCGGAAGATCACCTTCCGGGGGCTTTtttattgcgc,hisL:hisLp,rho-independent,hisLGDCBHAFI,360215,,None 
+RDBECOLITMC00051,274,310,forward,ggaaacacagAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTcgaccaaagg,thrL:thrLp,rho-independent,thrLABC,287010,,None 
+RDBECOLITMC00052,2746209,2746241,reverse,tttaatatgaCACCGGACTCCGTTCCTCGATGGGGTCCGGTTGttttattcac,ffh:ffhp,rho-independent,ffh,2478711,,None 
+RDBECOLITMC00053,107501,107544,forward,gtataaaattCGACTGGCAAATCTGGCACTCTCTCCGGCCAGGTGAACCAGTCGtttttttttg,lpxC:lpxCp1,rho-independent,mraZW-ftsLIO-murEF-mraY-murD-ftsW-murGC-ddlB-ftsQAZ-lpxC,2824434,,None 
+RDBECOLITMC00054,1449037,1449063,forward,gctcataagtAAAAAACGGCACCTGGTGCCGTTTTTTtgtctgaaac,feaB:feaBp1,rho-independent,feaB,9109378,,None 
+RDBECOLITMC00055,3322035,3322071,reverse,ctcggtaccaAATTCCAGAAAAGAGACGCTGAAAAGCGTCTTTTTTCgttttggtcc,secG-leuU:secGp1;secG-leuU:secGp2,rho-independent,secG-leuU,"12824337, 18033800, 19706412",,None 
+RDBECOLITMC00056,3060660,3060680,forward,atcaaataatGCCTGATAGCACATATCAGGCgttgtcctca,argP:argPp,rho-dependent,argP,2034653,,None 
+RDBECOLITMC00057,256442,256474,forward,ctaatcttttCAACGCCTGGCACTGCCGGGCGTTGTTCTTTTTaacttcaggc,gpt:gptp,rho-independent,gpt,6397401,,None 
+RDBECOLITMC00058,4376705,4376731,forward,aataagcaatAACGGTACGACAGCTGTGTCGTGCCGTttgttttttc,ecnB:ecnBp,rho-independent,ecnAB,9677290,,None 
+RDBECOLITMC00059,4190328,4190349,forward,caaaataacaAAACCCACCTTAAGGTGGGTTTcgccagagaa,yjaZ:yjaZp,rho-independent,yjaZ,6278450,,None 
+RDBECOLITMC00060,3376249,3376277,reverse,gtgaagtaatACAAAACAGGCCCAGGCGGCCTGTTTTGTctttttaatg,sspAB:sspAp,rho-independent,sspAB,1721886,,None 
+RDBECOLITMC00061,4472426,4472445,reverse,acccattcccAGCCCCTCAATCGAGGGGCTtttttttgcc,pyrLBI:pyrLp2;pyrLBI:pyrLp1,rho-independent,pyrLBI,6300835,,None 
+RDBECOLITMC00062,3966305,3966335,forward,ctcctgtgacCAGGCAGCGAAAAGACATGAGTCGATGACCGtaaacaggca,rhoL:rhoLp,rho-dependent,rhoL-rho,2423505,,None 
+RDBECOLITMC00063,3966342,3966359,forward,accgtaaacaGGCATGGATGATCCTGCCataccattca,rhoL:rhoLp,rho-dependent,rhoL-rho,2423505,,None 
+RDBECOLITMC00064,3966491,3966513,forward,ggctggaaaaCCTGGCTCGTATGCGTAAGCAGGacattatttt,rhoL:rhoLp,rho-independent,rhoL-rho,2423505,,None 
+RDBECOLITMC00065,3966718,3966740,forward,tctggtaagaTTCGCCCGCCGAAAGAAGGTGAAcgctattttg,rhoL:rhoLp,rho-independent,rhoL-rho,2423505,,None 
+RDBECOLITMC00066,3966856,3966876,forward,cgtctgcgtaTGGAACGTGGTAACGGTTCTActgaagattt,rhoL:rhoLp,rho-independent,rhoL-rho,2423505,,None 
+RDBECOLITMC00067,850982,851009,forward,tggtgatataAAAAATCCGCCTCTCGGGGCGGATTTTTgtttttaagg,yliM-ompX:yliMp;ompX:ompXp2,rho-independent,yliM-ompX,7836315,,None 
+RDBECOLITMC00068,3888462,3888509,forward,atgtgtgaccTCAAAATGGTTCAATATTGACAACAAAATTGTCGATCACCGCCCTTGAtttgcccttc,tnaC:tnaCp;tnaCAB:tnaCp,rho-dependent,tnaCAB,9045840,,None 
+RDBECOLITMC00069,83574,83603,reverse,gcagtcaaacAAAAAACCCGCGCCATTGCGCGGGTTTTTTtatgcccgaa,leuL:leuLp1,rho-independent,leuLABCD,6171647,,None 
+RDBECOLITMC00070,3910443,3910473,reverse,aaaactccagGCCGGGTACGGTGTTTTACGCCGCATCCGGCattacaaaat,pstS:pstSp;pstS:pstSp2,rho-independent,pstSCAB-phoU,6365894,,None 
+RDBECOLITMC00071,3908495,3908517,reverse,ctcaccctaaCCCTCTCCCCAGAGGGGCGAGGGgaccgaccga,pstSCA:pstSp;pstSCA:pstSp2,rho-independent,pstSCAB-phoU,2993631,,None 
+RDBECOLITMC00072,3815807,3815828,reverse,actgatttttAAGGCGACTGATGAGTCGCCTTttttttgtct,rph:rphp,rho-independent,rph-pyrE,"1375912, 6207018",,None 
+RDBECOLITMC00073,3817574,3817603,forward,ccgccttcacAAATGCCGCCACTCAAACAGAGCGGCATTTttcttccccg,yicC:yicCp,rho-independent,yicC,2664418,,None 
+RDBECOLITMC00074,2081341,2081369,reverse,ctttcttttgCAGCAGACTGGCAGGAGTGCGAGTCTGCTcgcataatca,dacD,rho-independent,dacD,8709849,,None 
+RDBECOLITMC00075,3853662,3853689,forward,aagtcgcaccAAAGGGGAGCGGGAAACCGCTCCCCTTTtatatttagc,tisB:tisBp,rho-independent,tisB,15620655,,None 
+RDBECOLITMC00076,3853118,3853144,reverse,aggcgactgaCGAAACCTCGCTCCGGCGGGGTTTTTTgttatctgca,istR-2:istR-2p;istR-1:istR-1p,rho-independent,istR-1,15620655,,None 
+RDBECOLITMC00077,2167162,2167200,forward,gaaccacctcCTTAGCCTGTGTAATCTCCCTTACACGGGCTTATTTTTTacgcgtaata,cyaR:cyaRp;cyaR:cyaRp2;cyaR:cyaRp3,rho-independent,cyaR,18978044,,None 
+RDBECOLITMC00078,1698136,1698163,reverse,ccggctcattGCAGCGAAATAATCCTCTCTTTATCTGCtatacctggt,malI:malIp,rho-independent,malI,2670898,,None 
+RDBECOLITMC00079,1235677,1235698,forward,tttaaagagcAAACCCCTCAAACGAGGGGTTTtttgttgttt,fadR:fadRp1;fadR:fadRp2,rho-independent,fadR,2843809,,None 
+RDBECOLITMC00080,3099654,3099674,reverse,taatcgcctcGCCCCGGTATCGTGCCGGGGCtttttcactt,ansB:ansBp1;ansB:ansBp2,rho-independent,ansB,2407723,,None 
+RDBECOLITMC00081,4110708,4110730,forward,aggaaagtaaGTGCCGGATATGAAATCCGGCACctgtcagact,cdh:cdhp,rho-independent,cdh,2995360,,None 
+RDBECOLITMC00082,632046,632091,forward,ttagtgcccaGGGTTCCCTCTCACCCTAACCCTCTCCCCGGTGGGGCGAGGGGACTgaccgagcgc,cstA:cstAp3;cstA:cstAp2;cstA:cstAp1,rho-independent,cstA,1848300,,None 
+RDBECOLITMC00083,2533409,2533424,forward,gcgtaaaaaaGCACCTTTTTAGGTGCttttttgtgg,cysK:cysKp2;cysK:cysKp1,rho-independent,cysK,3290198,,None 
+RDBECOLITMC00084,4005815,4005836,forward,gtttctcgcgCAGGCGCTGAAAATAGCGCCTGtttttatttc,pldA:pldAp,rho-independent,pldA,6397464,,None 
+RDBECOLITMC00085,507260,507287,forward,ctctttgacgGGCCAATAGCGATATTGGCCATTTTTTTagcgcaacat,chiX:chiXp,rho-independent,chiX,19426207,,None 
+RDBECOLITMC00086,4171760,4171803,forward,caggcatcaaATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATctgttgtttg,rrsB-gltT-rrlB-rrfB:rrsBp1;rrlB-rrfB:rrlBp;rrsB-gltT-rrlB-rrfB:rrsBp2;rrsB-gltT-rrlB-rrfB:rrsBp,rho-independent,rrsB-gltT-rrlB-rrfB,7028991,,None 
+RDBECOLITMC00087,4171935,4171962,forward,caaattaagcAGAAGGCCATCCTGACGGATGGCCTTTTtgcgtttcta,rrsB-gltT-rrlB-rrfB:rrsBp1;rrlB-rrfB:rrlBp;rrsB-gltT-rrlB-rrfB:rrsBp2;rrsB-gltT-rrlB-rrfB:rrsBp,rho-independent,rrsB-gltT-rrlB-rrfB,7028991,,None 
+RDBECOLITMC00088,3947032,3947067,forward,cgcccctgccAGAAATCATCCTTAGCGAAAGCTAAGGATTTTTTTTatctgaaata,rrsC-gltU-rrlC-rrfC:rrsCp1;rrsC-gltU-rrlC-rrfC:rrsCp2;rrsC-gltU-rrlC-rrfC:rrsCp,rho-independent,rrsC-gltU-rrlC-rrfC,115888,,None 
+RDBECOLITMC00089,2691157,2691185,reverse,cttattccatAACAAAGCCGGGTAATTCCCGGCTTTGTTgtatctgaac,glmY:glmYp1;glmY:glmYp2,rho-independent,glmY,17854828,,None 
+RDBECOLITMC00090,3850746,3850779,reverse,tgaacaacatCGCGCTTATCGTTAAGGTAAGCGCGTATTTTTTTtacccgccag,ivbL-ilvBN:ivbLp,rho-independent,ivbL-ilvBN-uhpABC,,,None 
+RDBECOLITMC00091,2521489,2521515,reverse,cgcagatagcAAAAAAGCGCCTTTAGGGCGCTTTTTTacattggtgg,xapR:xapRp1;xapR:xapRp2,rho-independent,xapR,2201776,,None 
+RDBECOLITMC00092,2521334,2521358,reverse,gcagatagtaAAAAAGCGCCTTTAGGGCGCTTTTTtacattggtg,xapR:xapRp1;xapR:xapRp2,rho-independent,xapR,2201776,,None 
+RDBECOLITMC00093,3776155,3776175,forward,gcctttcaaaAGTAAGCAACGTCTGCTTACTgcccctctac,mtlADR:mtlAp,rho-independent,mtlADR,8300537,,None 
+RDBECOLITMC00094,3776189,3776209,forward,cctctacctgCTTCGGCCGATAAAGCCGACGataatactcc,mtlADR:mtlAp,rho-independent,mtlADR,8300537,,None 
+RDBECOLITMC00095,3776277,3776304,forward,aatcgcgttaCGGGGAGGAAGTTTTTTCAGATACTCCCggaacgcctg,mtlADR:mtlAp,rho-independent,mtlADR,8300537,,None 
+RDBECOLITMC00096,3776401,3776419,forward,ccgtattaccCCGCGCCGGGAATGCGCGGccgccaattt,mtlADR:mtlAp,rho-independent,mtlADR,8300537,,None 
+RDBECOLITMC00097,2656506,2656530,reverse,aataatttccGCGTCATGCTTCACGCCGCAGATGCgttggctgcg,hscBA-fdx-iscX:hscBp,rho-independent,hscBA-fdx-iscX,1317854,,None 
+RDBECOLITMC00098,1888017,1888043,reverse,gtcagtcgtcAGACGCCGGTTAATCCGGCGTTTTTTTtgacgcccac,fadD-sroD:fadDp,rho-independent,fadD-sroD,2681190,,None 
+RDBECOLITMC00099,191721,191738,forward,atcaaaaaggAGCCGCCTGAGGGCGGCTtctttttgtg,rpsB-tsf:rpsBp,rho-independent,rpsB-tsf,6272196,,None 
+RDBECOLITMC00100,3328806,3328846,reverse,gtgaattgtaGCTGACCTGGGACTTGTACCCGGGTCGGTATTTTTTTGCTTctggtcccgg,greA:greAp2;greA:greAp1,rho-independent,greA,20008510,,None 
+RDBECOLITMC00101,1409217,1409249,forward,aattgattcgTACGACGCCGACTTTGATGAGTCGGCTTTTTTTtgcctgttat,fnrS:fnrSp,rho-independent,fnrS,20075074,,None 
+RDBECOLITMC00102,1622817,1622874,reverse,tagcgtaaaaGCAAAACACAAATCTATCCATGCAAGCATTCACCGCCGGTTTACTGGCGGTTTTTTTTcgccgtcata,mgrR:mgrRp,rho-independent,mgrR,19889087,,None 
+RDBECOLITMC00103,1622766,1622799,forward,ccctcacctaACCGGCCCCTTGTTACAGTTGTGTACAAGGGGCCtgatttttat,mgtS:mgtSp,rho-independent,mgtS,19889087,,None 
+RDBECOLITMC00104,1844932,1844954,reverse,ctgaaatatcCAGCGGATCAAGAAAATTCGTTGgatatttttt,selD-topB:selDp1;ydjA-selD-topB:ydjAp,rho-independent,ydjA-selD-topB,2553698,,None 
+RDBECOLITMC00105,1844937,1844959,reverse,atattctgaaATATCCAGCGGATCAAGAAAATTcgttggatat,selD-topB:selDp2,rho-independent,ydjA-selD-topB,2553698,,None 
+RDBECOLITMC00106,1980096,1980126,reverse,ggcaataactCTTTTCGCCGAGCAGGATGCTCGCGAAAAGAaactgtgatt,otsBA:otsBp2;otsBA:otsBp1;otsA:otsAp,rho-independent,otsBA,8045430,,None 
+RDBECOLITMC00107,3350671,3350697,forward,gtattcgcgcACCCCGGTCTAGCCGGGGTCATTTTTTagtggctttt,arcZ:arcZp,rho-independent,arcZ,11448770,,None 
+RDBECOLITMC00108,3663541,3663571,reverse,agcaggaaagAGTAAGGCTGAACCTTCATGTTCAACCTTACtctcatttac,gadXW:gadXp;gadW:gadWp1;gadW:gadWp2,rho-independent,gadAX,18808381,,None 
+RDBECOLITMC00109,3815096,3815119,reverse,taaagaaactCGCCGGATGAAAAGTCATCCGGCGtcatattact,rph-pyrE:rphp,rho-independent,rph-pyrE,1375912,,None 
+RDBECOLITMC00110,2947691,2947717,forward,ccaattattgAACACCCTAACGGGTGTTTTTTTGTTTctggtctccc,metZWV:metZp,rho-independent,metZWV,"12824337, 19706412, 2843439",,None 
+RDBECOLITMC00111,2947736,2947756,forward,ccataaaaaaGCGCCATTCAGCGCCTTTTTAtcatcccctt,metZWV:metZp,rho-independent,metZWV,2843439,,None 
+RDBECOLITMC00112,1316383,1316408,reverse,taatcccacaGCCGCCAGTTCCGCTGGCGGCATTTTaactttcttt,trpLEDCBA:trpLp,rho-independent,trpLEDCBA,3058546,,None 
+RDBECOLITMC00113,1315785,1315815,reverse,aagataattgCATCTGCGGGCCGTATGGCTCGCAGTGATTTcactggagaa,yciG:yciGp,rho-independent,yciGFE,3058546,,None 
+RDBECOLITMC00114,1314668,1314698,reverse,taccatgtccTTATTGACCCCGTATATTACGGGGTCGTTTTtgtgcggaat,yciGFE:yciGp;yciE:yciEp,rho-independent,yciGFE,3058546,,None 
+RDBECOLITMC00115,1312261,1312300,reverse,tgttctcctcAGGAAAATCATAGTAGCATCGCGCCTGTGATTTTCCTTTTaagtcggttt,yciCB:yciCp,rho-independent,yciCB,3058546,,None 
+RDBECOLITMC00116,3056235,3056283,forward,acaagaaatcCGCAAAATGATTCGGCAACGTCGTCGTGCGTTAACGCCGGAACAACAGCaggaaatggg,ssrS:ssrSp2;ssrS:ssrSp1;ssrS:ssrSp,rho-dependent,ssrS-ygfA,21036909,,None 
+RDBECOLITMC00117,3438444,3438504,reverse,ggcaatcgggGGAACTGGGAGGCCAGTGGCAAGAAAGTAAATCACTTTTTTACCACTGGTCTTCTGCTTTCaggcgcttgt,arfA:arfAp3,rho-independent,arfA,21435036,,None 
+RDBECOLITMC00118,2440283,2440310,reverse,ggcactaacgCAAAAGGGAACCTGATGGTTCCCTTTTTcacatcattg,fabB:fabBp,rho-independent,fabB,3076376,,None 
+RDBECOLITMC00119,1563276,1563301,reverse,gcgggttttcATTTAACGTGACACTGTCACTTAAATactgtgattt,dosCP,rho-independent,dosCP,9751644,,None 
+RDBECOLITMC00120,1405662,1405693,forward,ctgcataaaaAAATAGAGTCTGTCGACATCCGCCAGACTCTAcagtacacac,abgR,rho-independent,abgR,22289118,,None 
+RDBECOLITMC00121,3923705,3923732,reverse,gcattaaaaaTGCCTGGTAAGCACCCGCTTACCAGGCAacgcatcaag,asnC-mioC-mnmG:asnCp,rho-independent,asnC-mioC-mnmG,22337945,,None 
+RDBECOLITMC00122,1015900,1015924,forward,tctttaaaaaGAAACCTCCGCATTGCGGAGGTTTCgccttttgat,rmf:rmfp,rho-independent,rmf,15743942,,None 
+RDBECOLITMC00123,1686705,1686725,reverse,aataaacagaGCCGCCCTTCGGGGCGGTTTTtttacatggc,fumA:fumAp,rho-independent,fumAC,6328431,,None 
+RDBECOLITMC00124,1292461,1292485,reverse,gcacttgcttAAAATCCCGCCAGCGGCGGGATTTTttattgtccg,hns:hnsp,rho-independent,hns,22843842,,None 
+RDBECOLITMC00125,1338512,1338548,reverse,tgtgtaattcATTTGCTTGCCGGAAGCAAAATAACCGGCAAGCAAATagttgttact,ribA:ribAp1;ribA:ribAp2,rho-independent,ribA,8320220,,None 
+RDBECOLITMC00126,1733711,1733740,forward,tagagaaaggACTGACGGATGCCCGTTCGCATCCGTCAGTattgcaggac,lhr:lhrp;rnt-lhr:rntp,rho-independent,rnt-lhr,7559321,,None 
+RDBECOLITMC00127,193442,193498,forward,tcttgaacgaCAAAAACGCCGCTCAGTAGATCCTTGCGGATCGGCTGGCGGCGTTTTGCTTTTTATTctgtctcaac,frr:frrp,rho-independent,frr,1860827,,None 
+RDBECOLITMC00128,3648348,3648375,forward,gctggaaagtAAAAAACCGACGCAAAGTCGGTTTTTTTacgtcctgat,agrB:agrBp,rho-independent,agrB,23408903,,None 
+RDBECOLITMC00129,3648117,3648144,forward,gctggaaagtAAAAAACCGACGCAAAGTCGGTTTTTTTacatccggat,agrA:agrAp,rho-independent,agrA,23408903,,None 
+RDBECOLITMC00130,3647652,3647689,reverse,gaaacgtaatTAAGGGCTAAGAGCACACTACTCTTAGCCCTTTAACATttaacgcatt,dinQ:dinQp,rho-independent,dinQ,23408903,,None 
+RDBECOLITMC00131,3051048,3051072,reverse,tcacactttcATCTCCCGGTTTTTTCGCCGGGAGAttttcctcat,ygfB-pepP-ubiHI:ygfBp,rho-independent,ygfB-pepP-ubiHI,1339425,,None 
+RDBECOLITMC00132,1151860,1151887,forward,aagtgaacatCTCCAGGCGGTCGTTCGACCGCCTGAGTtttatctttt,acpP:acpPp,rho-independent,rpmF-plsX-fabHDG,1556094,,None 
+RDBECOLITMC00133,1449037,1449063,forward,gctcataagtAAAAAACGGCACCTGGTGCCGTTTTTTtgtctgaaac,feaB:feaBp2,rho-independent,feaB,9109378,,None 
+RDBECOLITMC00134,3020500,3020522,forward,atgacagatgCCCTCTTCCCGCAGGGAAGAGGGttaaataagg,ssnA:ssnAp,rho-independent,ygfK-ssnA,10074077,,None 
+RDBECOLITMC00135,3383281,3383316,forward,gtgcgctcaaAACAAAAAACCGGAGTCTGTGCTCCGGTTTTTTATTatccgctaat,degS:degSp,rho-independent,degQS,8576051,,None 
+RDBECOLITMC00136,3382115,3382154,forward,cgttaatgtcGTAAACCGGGCATCAGGCTTACGTGTGATGTCCGGTTAACtcgtggtatg,degQ:degQp,rho-independent,degQS,8576051,,None 
+RDBECOLITMC00137,3382157,3382178,forward,cggttaactcGTGGTATGCTGCTGCCGTTCCCttttttaatg,degQ:degQp,rho-independent,degQS,8576051,,None 
+RDBECOLITMC00138,1961817,1961843,forward,tgagagtgaaGCCTGATCAGGGTTAGCCGATCAGGCTtttttattgc,argS:argSp,rho-independent,argS,2668891,,None 
+RDBECOLITMC00139,1413702,1413724,forward,tagtaggagtGCCACCTTCCTTTTCAATAGTGGcggtaatttt,ralA:ralAp,rho-independent,ralA,24748661,,None 
+RDBECOLITMC00140,3453298,3453358,reverse,tcggggagctACGTAAGAACGGTTACACTCTCCCATCAATCGTAATGGGTCTGAGGAGTAATCATTTTCGTttataaaata,rpsJ-rplCDWB-rpsS-rplV-rpsC-rplP-rpmC-rpsQ:rpsJp,rho-independent,rpsJ-rplCDWB-rpsS-rplV-rpsC-rplP-rpmC-rpsQ,7844821,,None 
+RDBECOLITMC00141,790921,790940,reverse,accgcgctaaGCGCCCCTGGCAGGGGGCGCaggaaacgcc,galE:galEp1;galE:galEp,rho-dependent,galETKM,"18374359, 35695461",,None 
+RDBECOLITMC00142,790312,790425,reverse,gtggattatgTTCAGCGCGAGCTGGCAGACGGTAGCCGTACCGTTGTCGAAACCGAACACTGGTTAGCCGTCGTGCCTTACTGGGCTGCCTGGCCGTTCGAAACGCTACTGCTGCCCAAAGCCCacgttttacg,galE:galEp1;galE:galEp,rho-dependent,galETKM,18374359,,None 
+RDBECOLITMC00143,789840,789918,reverse,cctgccactcACACCATTCAGGCGCCTGGCCGCGTGAATTTGATTGGTGAACACACCGACTACAACGACGGTTTCGTTCTGCCCTGCGCgattgattat,galET:galEp1;galET:galEp,rho-dependent,galETKM,18374359,,None 
+RDBECOLITMC00144,789952,789977,reverse,tgtaagaaatGAGTCTGAAAGAAAAAACACAATCTCtgtttgccaa,galET:galEp1;galET:galEp,rho-dependent,galETKM,18374359,,None 
+RDBECOLITMC00145,788615,788741,reverse,gctgatggacTGGGGTGCGACTTTACTTTCCGCCCGTATTCCGCTTTCCGATGGCAGCGTCCGCGAGGCGCTGCTCGGCTGTGCCAGCCCGGAATGCTATCAGGATCAGGCCGCGTTTCTGGGGGCCTCTATTGGTCgttatgccaa,galETK:galEp1;galETK:galEp,rho-dependent,galETKM,18374359,,None 
+RDBECOLITMC00146,787763,787768,reverse,agggctttatCTCATAttgttcaaat,galETKM:galEp;galETKM:galEp1,rho-dependent,galETKM,18374359,,None 
+RDBECOLITMC00147,950301,950330,reverse,atttccccgtAAAGCGGCAACTTTATTGAGTTGCCGCTTTtttattccgc,pflA:pflAp,rho-independent,pflA,2192229,,None 
+RDBECOLITMC00148,3184478,3184520,reverse,tatgccgccaCTCCTAAGACTGCCCTGATTCTGGTAACCATAATTTTAGTGAGgtttttttac,sroG-ribB:ribBp,rho-dependent,sroG-ribB,22431636,,None 
+RDBECOLITMC00149,2192993,2193034,reverse,tctggttattCTTCATACACCGCAGAGATGTTACATTGATGCGGTGTATTAGtttttgccgc,mrp:mrpp,rho-independent,mrp,2259334,,None 
+RDBECOLITMC00150,2196343,2196366,forward,atcccccttcAAGGCGCTGCATCGACAGCGCCTTttctttataa,metG:metGp1;metG:metGp2,rho-independent,metG,2259334,,None 
+RDBECOLITMC00151,453557,453576,reverse,tctgccctctGGCCCGGTGCAAGCCGGGCCtgtagacgcc,yajG:yajGp,rho-independent,yajG-ampG,8231804,,None 
+RDBECOLITMC00152,2282824,2282836,forward,ttgtaaaaaaCCCCGCTCCGGCGgggttttttg,None:rplVp,rho-independent,rplY,25749694,,None 
+RDBECOLITMC00153,134249,134272,forward,acgacacaatGCCCGGTGAATGAGATTCCCGGGCatttttttat,acnB:acnBp1,rho-independent,acnB,25092924,,None 
+RDBECOLITMC00154,2965066,2965095,reverse,gaaaaacgacCGTACCGGAACCGGAACGCTTTCCATTTTTggtcatcaga,lgt:lgtp,rho-independent,lgt-thyA,1991715,,None 
+RDBECOLITMC00155,2964320,2964339,reverse,cctgccagagCCGACGCCAGTGTGCGTCGGtttttttacc,thyA:thyAp;lgt-thyA:lgtp,rho-dependent,lgt-thyA,6308660,,None 
+RDBECOLITMC00156,1287009,1287033,reverse,tctcaagcgaATCCGCAATCAAATATTCTGCCCATgcggggaagg,tyrV-tpr:tyrVp;tyrTV-tpr:tyrTp,rho-dependent,tyrTV-tpr,7034960,,None 
+RDBECOLITMC00157,696392,696429,reverse,accccagccaCATTAAAAAAGCTCGCTTCGGCGAGCTTTTTGCTTTTCtgcgttcatt,glnW-metU-glnVX:glnWp;metT-leuW-glnUW-metU-glnVX:metTp,rho-independent,metT-leuW-glnUW-metU-glnVX,"12824337, 19706412, 2419743",,None 
+RDBECOLITMC00158,1031590,1031617,reverse,ccaaataagaTAAGGGGTTAGCTAAATGCTAACCCCTTtttcttttgc,serT:serTp,rho-independent,serT,"12824337, 19706412, 2419743, 6376117",,None 
+RDBECOLITMC00159,1031551,1031574,reverse,tttgcctgtcGAAATTCTCAGGGCGTTATATTTGcttaatgacc,serT:serTp,rho-independent,serT,"2419743, 6376117",,None 
+RDBECOLITMC00160,4177158,4177185,forward,caatgcgcacTAAAAGGGCATCATTTGATGCCCTTTTTgcacgctttc,thrU-tyrU-glyT-thrT-tufB:thrUp,rho-independent,thrU-tyrU-glyT-thrT-tufB,"2419743, 7312036",,None 
+RDBECOLITMC00161,925843,925871,reverse,tttaaagaagAGCTCGTACGAAAGTGCGAGCTTTTTTTTcgcattttat,serW:serWp1;serW:serWp2,rho-independent,infA-serW,"12824337, 19706412, 7518257",,None 
+RDBECOLITMC00162,3525426,3525448,forward,tgttctgattAAAAAGGCGCTTCGGCGCCTTTTcagtttgctg,mrcA:mrcAp,rho-independent,mrcA,3882429,,None 
+RDBECOLITMC00163,3982813,3982841,forward,cgccgaccaaTTTTGAACCCCGCTTCGGCGGGGTTTTTTgttttctgtg,argX-hisR-leuT-proM:argXp,rho-independent,argX-hisR-leuT-proM,"12824337, 19706412, 6327651",,None 
+RDBECOLITMC00164,404786,404824,reverse,tgactttcgcCGGACGTCAGGCCGCCACTTCGGTGCGGTTACGTCCGGCtttctttgct,proC:proCp,rho-independent,proC,6296787,,None 
+RDBECOLITMC00165,940741,940765,forward,ttctgaatctAAAAAGCGCCTGCGGGCGCTTTTTTtgtctccctt,serS:serSp,rho-independent,serS,3029694,,None 
+RDBECOLITMC00166,34087,34120,forward,atcgaataacTAATACGGTTCTCTGATGAGGACCGTTTTTTTTTgcccattaag,carAB:carAp2;carAB:carAp1,rho-independent,carAB,"6308632, 6377309",,None 
+RDBECOLITMC00167,3486760,3486792,forward,taatcccgtcGGAGTGGCGCGTTACCTGGTAGCGCGCCATTTTgtttcccccg,crp:crpp3;crp:crpp2;crp:crpp1,rho-independent,crp,6280141,,None 
+RDBECOLITMC00168,2223961,2223987,forward,gccgtctgccCCGCCGCCGCCATTTGGGCGGCTTTTTgttttttata,dld,rho-independent,dld,6386470,,None 
+RDBECOLITMC00169,4297178,4297211,reverse,taataccgtcCTTTCTACAGCCTCCTTTCGGAGGCTGTTTTTTTatccattcga,fdhF:fdhFp,rho-independent,fdhF,3040739,,None 
+RDBECOLITMC00170,753126,753163,reverse,taagttgtaaATATTTTAACCCGCCGTTCATATGGCGGGTTGATTTTTatatgcctaa,gltA:gltAp1;gltA:gltAp2,rho-independent,gltA,6380576,,None 
+RDBECOLITMC00171,2519208,2519242,reverse,cgtgtaaaaaGATAAACGGCAGGAGATAATATCCTGCCGTTTTTTatttatgctg,gltX:gltXp3;gltX:gltXp2;gltX:gltXp1,rho-independent,gltX,3015933,,None 
+RDBECOLITMC00172,237031,237067,forward,aaaatgagttCAGAGAGCCGCAAGATTTTTAATTTTGCGGTTTTTTTgtatttgaat,aspV:aspVp,rho-independent,aspV,"12824337, 19706412, 3023634",,None 
+RDBECOLITMC00173,3110445,3110477,forward,ggcaccactaATTCTTAAGAACCCGCCCACAAGGCGGGTTTTTgcttttggat,pheV:pheVp,rho-independent,pheV,"12824337, 19706412, 3892481",,None 
+RDBECOLITMC00174,1736082,1736114,forward,ttgtcagcaaCTGTAACGCAGAAGGTTATCCTTCTGCGTTTTTgtttaattag,sodB:sodBp,rho-independent,sodB,2447093,,None 
+RDBECOLITMC00175,1850701,1850738,forward,taagtcttgtACTGAGTGGCCGACAGATCGTCGGCCACATTATTTTTTacgtcgacga,sppA,rho-dependent,sppA,3522590,,None 
+RDBECOLITMC00176,931019,931061,reverse,taacaaaagtAAAGAAGGCGACACCATGCGACTATGGGTCGCCTTTATTTTTTccccgttgta,trxB:trxBp,rho-independent,trxB,3288628,,None 
+RDBECOLITMC00177,4000150,4000177,forward,gtgtaacgttGCCGGATGCGGTGCTGCGCACCTTATTTggcctaaaaa,uvrD:uvrDp2;uvrD:uvrDp1,rho-independent,uvrD,6379604,,None 
+RDBECOLITMC00178,4240734,4240777,reverse,acgctgtaatCTTCCTGTCCAGCACGCCGCGCCATTTCGGCGTGCTGACTTTTTactcccgctt,xylE:xylEp,rho-independent,xylE,2820984,,None 
+RDBECOLITMC00179,4007726,4007763,forward,gtatgaagacTCCGTAAACGTTTCCCCCGCGAGTCAAATGTATGTTGAtgttatttct,recQ:recQp,rho-independent,recQ,3027506,,None 
+RDBECOLITMC00180,781653,781687,forward,cgacccaccaATGTAAAAAAGCGCCCTAAAGGCGCTTTTTTGCTAtctgcgatac,lysQ,rho-independent,lysQ,"12824337, 19706412",,None 
+RDBECOLITMC00181,781809,781843,forward,cgacccaccaATGTAAAAAAGCGCCCTAAAGGCGCTTTTTTGCTAttcaggcatc,lysQ,rho-independent,lysQ,"12824337, 19706412",,None 
+RDBECOLITMC00182,2521485,2521519,forward,cgacccaccaATGTAAAAAAGCGCCCTAAAGGCGCTTTTTTGCTAtctgcgattt,valUXY-lysV:valUp,rho-independent,valUXY-lysV,"12824337, 19706412",,None 
+RDBECOLITMC00183,1097522,1097561,reverse,accgccatatTTAAAGAAGAGCTCGTACGAAAGTACGGGCTTTTTTTTCGtatattgcac,serX:serXp,rho-independent,serX,"12824337, 19706412",,None 
+RDBECOLITMC00184,1097341,1097380,reverse,accgccatatTTAAAGAAGAGCTCGTACGAAAGTACGGGCTTTTTTTTCGtatattgcac,serX:serXp,rho-independent,serX,"12824337, 19706412",,None 
+RDBECOLITMC00185,1097160,1097199,reverse,accgccatatTTAAAGAAGAGCTCGTACGAAAGTACGGGCTTTTTTTTCGtgtattgcac,serX:serXp,rho-independent,serX,"12824337, 19706412",,None 
+RDBECOLITMC00186,1096979,1097018,reverse,accgccatatTTAAAGAAGAGCTCGTACGAAAGTACGGGCTTTTTTTTCGtatattgcac,serX:serXp,rho-independent,serX,"12824337, 19706412",,None 
+RDBECOLITMC00187,1991745,1991778,reverse,caataagcagTGTCGTGAAACCACCTTCGGGTGGTTTTTTTGTGcctgcaactt,glyW-cysT-leuZ:glyWp,rho-independent,glyW-cysT-leuZ,"12824337, 19706412",,None 
+RDBECOLITMC00188,2044704,2044750,forward,cgggtttttaACATCTTAAGCGCCCTCGACCTTTATGGTTGAGGGCGTTTTGCTATGaacgccatca,asnT:asnTp,rho-independent,asnT,"12824337, 19706412",,None 
+RDBECOLITMC00189,2057926,2057974,reverse,aaaaataaaaATTATTTTTACCCGGTTACCTTGTAAAAAAGTGACCGGGTTTTTTGATTtctgtgtttc,asnW,rho-independent,asnW,"12824337, 19706412",,None 
+RDBECOLITMC00190,2286295,2286331,forward,ccaaaaatccCAAGAAAAAACCAACCCTTACGGTTGGTTTTTTTATAtctgcaatta,proL:proLp,rho-independent,proL,"12824337, 19706412",,None 
+RDBECOLITMC00191,2518002,2518041,reverse,tagctccaccAAATTTCCAACCCTCGCTGCAAAGCGGGGGTTTTTTGTCTctgctttttg,alaWX:alaWp,rho-independent,alaWX,"12824337, 19706412",,None 
+RDBECOLITMC00192,3215675,3215716,forward,gggccaccagATATAGCAAAGGCTGACGAGAAATCGTCAGCCTTTTTCTTTTtatatatcag,ileX:ileXp,rho-independent,ileX,"12824337, 19706412",,None 
+RDBECOLITMC00193,3708577,3708615,reverse,tcaccgaccaAATTCGAAAAGCCTGCTCAACGAGCAGGCTTTTTTGCATctgcagctca,proK:proKp,rho-independent,proK,"12824337, 19706412",,None 
+RDBECOLITMC00194,3708409,3708447,reverse,tcaccgaccaAATTCGAAAAGCCTGCTCAACGAGCAGGCTTTTTTGCATctgcagctca,proK:proKp,rho-independent,proK,"12824337, 19706412",,None 
+RDBECOLITMC00195,4362509,4362548,reverse,gggcaccaaaTTCATATAAACGGACCTCCACGGAGGTCCGTTTTTCGTTTcaggacgcca,pheU:pheUp,rho-independent,pheU,"12824337, 19706412",,None 
+RDBECOLITMC00196,4496494,4496529,forward,gcaccaaaagTATGTAAATAGACCTCAACTGAGGTCTTTTTTTATGcctgaaatcc,leuX:leuXp,rho-independent,leuX,"12824337, 19706412",,None 
+RDBECOLITMC00197,2059930,2059966,forward,ggagccaaatTCCTGAAAAGCCCGCTTTTATAGCGGGATTTTTGCTAtatctgataa,asnU:asnUp,rho-independent,asnU,"12824337, 19706412",,None 
+RDBECOLITMC00198,3056957,3056991,forward,cataacccttCTCCTTCAAGCCCTCGCTTCGGTGAGGGCTTTACCgttacagccc,sibC:sibCp,rho-independent,sibC,20453032,,None 
+RDBECOLITMC00199,4079990,4080025,forward,tgatgtcaatCAGATTGCTGACAACGTGCGCGTTGTTCATGCCGGAtgcggcgtga,yiiF,rho-independent,yiiF,30247625,,None 
+RDBECOLITMC00200,1286525,1286579,forward,gctcgtcactAAGCGAATTTTAGTTCACATAGACCCTGCTTCGGCGGGGTTTTTTTATGGGCACGgtgcggggtg,narGHJI:narGp,rho-independent,narGHJI,"11522828, 30247625",,None 
+RDBECOLITMC00201,2737498,2737552,forward,aagagtagtcCTTTATATTGAGTGTATCGCCAACGCGCCTTCGGGCGCGTTTTTTGTTGACAGCGtgaaaacagt,raiAZ:raiAp,rho-independent,raiAZ,"11522828, 30247625",,None 
+RDBECOLITMC00202,2731557,2731611,reverse,ccggattgtcGCCGTCCAGTAAATGATAAAACGAGCCCTTCGGGGCTCGTTTTTGTCTATAAGTTagacggaaaa,clpB:clpBp2;clpB:clpBp,rho-independent,clpB,"11522828, 30247625",,None 
+RDBECOLITMC00203,1800035,1800091,reverse,cagtaaggccTTCAAGTAGCACTGTCTGTGGAGCCTTCGGGCTTCACAGGCTTTGTTCGCCTTTGTTtcgtttatta,infC:infCp1;thrS-infC:thrSp,rho-independent,thrS-infC-rpmI-rplT-pheMST-ihfA,"11522828, 30247625",,None 
+RDBECOLITMC00204,3423371,3423425,reverse,aactgccagaCATCAAATAAAACAAAAGGCTCAGTCGGAAGACTGGGCCTTTTGTTTTATCTGTTgtttgtcggt,rrsD-ileU-alaU-rrlD-rrfD-thrV-rrfF:rrsDp1;rrsD-ileU-alaU-rrlD-rrfD-thrV-rrfF:rrsDp2;rrsD-ileU-alaU-rrlD-rrfD-thrV-rrfF:rrsDp,rho-independent,rrsD-ileU-alaU-rrlD-rrfD-thrV-rrfF,"11522828, 30247625",,None 
+RDBECOLITMC00205,4109830,4109884,forward,ctgatttcccCAGGATAATTATCAAACCCGGTGGTTTCTCGCGACCGGGTTTTTTATTTGTCACGattttgcgtt,sbp,rho-independent,sbp,"11522828, 30247625",,None 
+RDBECOLITMC00206,4108678,4108732,forward,catggacaaaGCGCACTTTGTCAGCAATATGAGGCGGATTTCTTCCGCCTTTTTAATCCCTCAACatatacccgc,pfkA:pfkAp1;pfkA:pfkAp;pfkA:pfkAp3;pfkA:pfkAp2,rho-independent,pfkA,"11522828, 30247625",,None 
+RDBECOLITMC00207,1972771,1972825,reverse,ttctcccgatTTCCTCAATTGAAATGAACCCGATGATCTGCGCATCGGGTTTTTTATTTCAATTTcgcggcgggt,motRAB-cheAW:motRp,rho-independent,motRAB-cheAW,"11522828, 30247625",,None 
+RDBECOLITMC00208,2432963,2433017,reverse,ggaacctgagGCCTGATAACTGATAAGGGCAGGGCCACTGGCTCTGCCCTTTTGCTATTCTCACCgtaacgaatc,accD:accDp,rho-independent,accD,"11522828, 30247625",,None 
+RDBECOLITMC00209,4056418,4056472,reverse,tctccaacgtGAAGTTTGTCAGCTATCTGTAGCCCATCTCTGCATGGGCTTTTTTCTCCGTCAATtctctgatgc,glnAZ:glnAp1;glnAZ:glnAp2,rho-independent,glnAZLG,"11522828, 30247625",,None 
+RDBECOLITMC00210,765104,765158,reverse,aaaatcatcgCGATAAGCACAAAAAAGGCCATCATACGATGGCCAACCATGTCGAAACCGACAGCccttcgccat,mngR:mngRp,rho-independent,mngR,"11522828, 30247625",,None 
+RDBECOLITMC00211,963662,963716,forward,cagctaaaggCGAGTAATTCTCTGACTCTTCGGGATTTTTATTCCGAAGTTTGTTGAGTTTACTTgacagattgc,cmk-rpsA:cmkp,rho-independent,rpsA-ihfB,"11522828, 30247625",,None 
+RDBECOLITMC00212,3564082,3564136,reverse,ggtgagattgTAAGTTCACCAATAAATAGAACGGGGCCAAAGGGTCCCGTTTTTTTCCGCCATCAtttcggaaaa,glgBXCAP:glgBp;glgAP:glgAp;glgCAP:glgCp1;glgCAP:glgCp2;glgCAP:glgCp3,rho-independent,glgBXCAP,"11522828, 30247625",,None 
+RDBECOLITMC00213,964119,964173,forward,ttaagtttttTACTCAAACTTGAACGAGAGAAAAGCACCTGTCGGGTGCTTTTTTCATTTCTCTAatctggaact,ihfB:ihfBp2;ihfB:ihfBp;rpsA-ihfB:rpsAp1;rpsA-ihfB:rpsAp3,rho-independent,rpsA-ihfB,"11522828, 30247625",,None 
+RDBECOLITMC00214,2430850,2430904,reverse,gccgcaaaggCATAAAAAGTCGATGGCGTTGAATATTTTTTCAGCGCCATTTTTATTGATGCGCGggaaggaaat,folC-dedD,rho-independent,folC-dedD,"11522828, 30247625",,None 
+RDBECOLITMC00215,4132402,4132456,forward,agtacatggtTAGTTTATATTTGCAGTCCGGTTTGCTTTGCATACCGGATTTTCTTTTTCTTACCatcctgaagt,metBL:metBp,rho-independent,metBL,"11522828, 30247625",,None 
+RDBECOLITMC00216,1977200,1977254,reverse,tgatacggtgAGGCGCAACATTCCAGCAGCGGTAACGACGTACCGCTGCTTTTTTTTGCCCCAATcgcgcgttaa,flhDC:flhDp2;flhDC:flhDp,rho-independent,flhDC,"11522828, 30247625",,None 
+RDBECOLITMC00217,3313185,3313239,reverse,gaacagccctTCCACCTGAAATTAATTTTAAAAAGGGGCTAACAGCCCCTTTTTTGTCAGGAGAAtttattatgg,infB:infBp;nusA-infB:nusAp;rimP-nusA-infB:rimPp;metY-yhbC-nusA-infB:metYp1,rho-independent,metY-yhbC-nusA-infB-rbfA-truB-rpsO-pnp,"11522828, 30247625",,None 
+RDBECOLITMC00218,3534473,3534527,reverse,gggcacgacaAAAGAAGGGTAAATAAACGGGAGGCGAAGGTGCCTCCCGTTTTGCTTTCTATAAGatactggata,ompR-envZ:ompRp2;ompR-envZ:ompRp1;ompR-envZ:ompRp3;ompR-envZ:ompRp4,rho-independent,ompR-envZ,"11522828, 30247625",,None 
+RDBECOLITMC00219,987392,987438,reverse,tttacgcgcaAAAACTAATCCGCATTCTTATTGCGGATTAGTTTTTTCTTAGCTAATagcacaattt,asnS:asnSp,rho-independent,asnS,"11522828, 30247625",,None 
+RDBECOLITMC00220,985831,985885,reverse,aatagcacacCTCTTTGTTAAATGCCGAAAAAACAGGACTTTGGTCCTGTTTTTTTTATACCTTCcagagcaatc,ompF:ompFp2;ompF:ompFp,rho-independent,ompF,"11522828, 30247625",,None 
+RDBECOLITMC00221,419191,419245,forward,ttaatccgccTTTGTCATCTTTTATTGCCATAAGCCAGTCGATGCTGGCTTATTTTCTTTGCAGTcaaaatacgg,phoBR:phoBp,rho-independent,phoBR,"11522828, 30247625",,None 
+RDBECOLITMC00222,4049962,4050016,forward,cggatttggcTGAATATTTTAGCCGCCCCAGTCAGTAATGACTGGGGCGTTTTTTATTGGGCGAAagaaaagatc,spf-spfP:spfp,rho-independent,spf-spfP,"11522828, 30247625",,None 
+RDBECOLITMC00223,1122675,1122729,reverse,gaaattgtcaTTCCATTTACTGATTAATCACGAGGGCGCATTCGCGCCCTTTATTTTTCGTGCAAaggaaaacgt,yceB,rho-independent,yceB,"11522828, 30247625",,None 
+RDBECOLITMC00224,3877532,3877586,reverse,ccgcatccggCAAGAAGCTATAAGAAAAGGGCGGAGATCATCTCCGCCCTTTTTATTTCTGCAATccgcaattat,gyrB:gyrBp;gyrB:gyrBp2,rho-independent,gyrB,"11522828, 30247625",,None 
+RDBECOLITMC00225,228998,229052,forward,tcccgtccgtTCCGCCACTTATTAAGAAGCCTCGAGTTAACGCTCGAGGTTTTTTTTCGTCTGTAtatctattat,aspU:aspUp,rho-independent,aspU,"11522828, 30247625",,None 
+RDBECOLITMC00226,3967677,3967731,forward,acgctcataaATTTGTCTTATGCCAAAAACGCCACGTGTTTACGTGGCGTTTTGCTTTTATATCTgtaatcttaa,rhoL-rho:rhoLp,rho-independent,rhoL-rho,"11522828, 30247625",,None 
+RDBECOLITMC00227,4213155,4213209,forward,ggaactgccaGGCATCAAATTAGAAAAACCCCGGTCCATAAGGCCGGGGTTTTTTGCATATCAATtatttgcatg,rrsE-gltV-rrlE-rrfE:rrsEp1;rrsE-gltV-rrlE-rrfE:rrsEp2;rrlE-rrfE:rrlEp;rrsE-gltV-rrlE-rrfE:rrsEp3,rho-independent,rrsE-gltV-rrlE-rrfE,"11522828, 30247625",,None 
+RDBECOLITMC00228,4101468,4101522,forward,tataggccgcATATCAGCTTAAAAAATGAACCATCGCCAACGGCGGTGGTTTTTTTGTGATCAATttcaaaataa,sodA:sodAp,rho-independent,sodA,"11522828, 30247625",,None 
+RDBECOLITMC00229,1030701,1030755,reverse,cgattaatctCACCCGCTAACACTTTCATAGCCTCGCTTTATGCGGGGCTTTGTTTTTTGTTACActgccgccag,yccA:yccAp,rho-independent,yccA,"11522828, 30247625",,None 
+RDBECOLITMC00230,5032,5086,forward,atctattcatTATCTCAATCAGGCCGGGTTTGCTTTTATGCAGCCCGGCTTTTTTATGAAGAAATtatggagaaa,thrLABC:thrLp,rho-independent,thrLABC,"11522828, 30247625",,None 
+RDBECOLITMC00231,2744115,2744169,forward,taaaacaccaGCAAACAGATAAAAAAGGGCCAGCCAATTGGCCAGCCCTTCTTAACAGGATGTCGcttaagcgaa,yfiR-dgcN-yfiB:yfiRp;rpsP-rimM-trmD-rplS:rpsPp,rho-independent,yfiR-dgcN-yfiB;rpsP-rimM-trmD-rplS,"11522828, 30247625",,None 
+RDBECOLITMC00232,4271007,4271061,forward,ttgctggtgcAACTCTGAAAGGAAAAGGCCGCTCAGAAAGCGGCCTTAACGATTACAGCATCGGCttaaggaagc,yjbQR:yjbQp;uvrA:uvrAp,rho-independent,yjbQR;uvrA,"11522828, 30247625",,None 
+RDBECOLITMC00233,1996034,1996088,forward,acaagcctacCGTCAGTAATATAAAACCGGCTGATAGCGTGCCTTTCAGCCGGTTTTTGCATCTGgcacgcagga,yecF:yecFp,rho-independent,yecF,"11522828, 30247625",,None 
+RDBECOLITMC00234,2522698,2522720,reverse,aaaaggattcGCGGCTCTGCTCTTCAGAGCTGCttttatgata,xapB:xapBp1,rho-independent,xapAB,,,None 
+RDBECOLITMC00235,3966105,3966136,forward,atttcatgttCGGGTGCCCCGTCGCTAAAAACTGGACGCCCGgcgtgagtca,trxA:trxAp1;trxA:trxAp2;trxA:trxAp3,rho-dependent,trxA,2423505,,None 
+RDBECOLITMC00236,2071478,2071511,forward,ccctttacctGCCGGTATCCACGTTTGTGGGTACCGGCTTTTTTattcaccctc,isrC-flu:flup,rho-independent,isrC-flu,24837285,,None 
+RDBECOLITMC00237,4127241,4127262,forward,gatttccgaaAAAAGCGCCGCACGGCGCTTTTtttgtgcctg,rpmE:rpmEp1;rpmE:rpmEp2,rho-independent,rpmE,32209634,,None 
+RDBECOLITMC00238,1997022,1997050,forward,aaatggcgtcCAGCCCCGACAGGTGAATCGTCGGGGCTGattttttctt,sdsN:sdsNp2;sdsN:sdsNp1,rho-independent,sdsN,27166377,,None 
+RDBECOLITMC00239,787767,787790,reverse,gtaatgttacGCCCTCGTCATGAGGGCTTTATCTcatattgttc,galETKM:galEp,rho-independent,galETKM,30782818,,None 
+RDBECOLITMC00240,787689,787766,reverse,ggctttatctCATATTGTTCAAATCACCAGCAAACACCGACATATTTGCAACTCAATATTCACAACAACCTTACACTGCGCCACTATTttcgctatgg,galETKM:galEp,rho-dependent,galETKM,30782818,,None 
+RDBECOLITMC00241,787767,787790,reverse,gtaatgttacGCCCTCGTCATGAGGGCTTTATCTcatattgttc,galETKM:galEp3;galETKM:galEp1;galETKM:galEp2,rho-independent,galETKM,30782818,,None 
+RDBECOLITMC00242,787689,787766,reverse,ggctttatctCATATTGTTCAAATCACCAGCAAACACCGACATATTTGCAACTCAATATTCACAACAACCTTACACTGCGCCACTATTttcgctatgg,galETKM:galEp1;galETKM:galEp2,rho-dependent,galETKM,,,None 
+RDBECOLITMC00243,787689,787766,reverse,ggctttatctCATATTGTTCAAATCACCAGCAAACACCGACATATTTGCAACTCAATATTCACAACAACCTTACACTGCGCCACTATTttcgctatgg,galETKM:galEp3,rho-dependent,galETKM,30782818,,None 
+RDBECOLITMC00244,1946815,1946854,reverse,actgcgttaaGTTATACCGCCTCGGTCAGTTCCGGCTGAGGCGTTTCCACtccctccgca,yebC-ruvC:yebCp;ruvC:ruvCp;nudB-yebC-ruvC:nudBp,rho-dependent,nudB-yebC-ruvC,1885548,,None 
+RDBECOLITMC00245,1159325,1159346,reverse,acctgtaaaaAAGGCAGCCATCTGGCTGCCTTagtctcccca,fhuE:fhuEp,rho-independent,fhuE,2162465,,None 
+RDBECOLITMC00246,129366,129394,forward,tccggcaattAAAAAAGCGGCTAACCACGCCGCTTTTTTtacgtctgca,pdhR-aceEF-lpdA:pdhRp2;pdhR-aceEF-lpdA:pdhRp;lpdA:lpdAp,rho-independent,pdhR-aceEF-lpdA,3897791,,None 
+RDBECOLITMC00247,762959,762966,forward,aagcgatacgAAATATTCggtctacggt,sucAB:sucAp,rho-dependent,sdhCDAB-sucABCD-sdhX,3897791,,None 
+RDBECOLITMC00248,758444,758450,forward,tcgcatcaggCAACCAGtgccggatgc,sdhDAB:sdhDp,rho-dependent,sdhCDAB-sucABCD-sdhX,3897791,,None 
+RDBECOLITMC00249,4466284,4466298,reverse,cctgtcctgaTCGTTTCCTGAACGAtaaattgtga,treR:treRp2;treR:treRp3;treR:treRp4;treR:treRp1,rho-independent,treR,9148912,,None 
+RDBECOLITMC00250,1113532,1113560,forward,acgagccaatAAAAATACCGGCGTTATGCCGGTATTTTTttacgaaaga,mdoGH:opgGp2;mdoGH:opgGp;mdoGH:opgGp1,rho-independent,mdoGH,7934824,,None 
+RDBECOLITMC00251,2597803,2597824,reverse,gtaaaaatacAGGGCTGGAATCATCCGGCCCTtttttctgat,bamC:bamCp;dapA-nlpB:dapAp,rho-independent,dapA-nlpB,1885529,,None 
+RDBECOLITMC00252,4313801,4313827,forward,agaaattgagATTCATCCACTACTTGCATGGATGAGTaatgattaat,rpiB:rpiBp,rho-independent,rpiB,8576032,,None 
+RDBECOLITMC00253,3577622,3577652,reverse,ccggctggacAATGTTACCGATAACAGTTACCCGTAACATTtttaattctt,gntR:gntRp2;gntR:gntRp3;gntR:gntRp4,rho-independent,gntRKU,,,None 
+RDBECOLITMC00254,2822670,2822687,reverse,tgatacacaaGGGTCGCATCTGCGGCCCttttgctttt,recA:recAp,rho-independent,recAX,12547390,,None 
+RDBECOLITMC00255,1388267,1388301,forward,agtaagcgcgAATATGCCTGATGGTGCAACACCATCAGGCATATTaaattatgct,tyrR:tyrRp,rho-independent,ycjXF-tyrR,3001057,,None 
+RDBECOLITMC00256,361212,361236,reverse,gaacttgtagGCCTGATAAGCGCAGCGTATCAGGCaatttttata,lacYA:lacYp;lacZYA:lacZp3;lacZYA:lacZp2;lacZYA:lacZp4;lacZYA:lacZp1;cynTSX:cynTp,rho-independent,lacZYA;cynTSX,3049588,,None 
+RDBECOLITMC00257,361140,361179,reverse,tagccgcatcCGGCATGAACAAAGCGCAGGAACAAGCGTCGCATCATGCCtctttgaccc,lacYA:lacYp;lacZYA:lacZp3;lacZYA:lacZp2;lacZYA:lacZp4;lacZYA:lacZp1,rho-independent,lacZYA,3901000,,None 
+RDBECOLITMC00258,4106361,4106379,forward,tccctgtcttCCCCCACATGCTGTGGGGGttttttttat,cpxPQ:cpxPp,rho-independent,cpxPQ,9473036,,None 
+RDBECOLITMC00259,4242539,4242555,reverse,actgttattcGGCGCTCCACGGAGCGCctttttttct,malEFGH:malEp,rho-independent,malEFGH,2836810,,None 
+RDBECOLITMC00260,1311815,1311846,forward,gtaagcagaaAGTCAAAAGCCTCCGACCGGAGGCTTTTGACTattactcaac,tonB:tonBp,rho-independent,tonB,6310567,,None 
+RDBECOLITMC00261,3269962,3269975,reverse,tacgtaaaaaCCCGCTTCGGCGGGtttttacttt,rnpB:rnpBp,rho-independent,garPLRK-rnpB,9175883,,None 
+RDBECOLITMC00262,3270075,3270088,reverse,tacgtaaaaaCCCGCTTCGGCGGGtttttgcttt,rnpB:rnpBp,rho-independent,garPLRK-rnpB,9175883,,None 
+RDBECOLITMC00263,3270188,3270201,reverse,tacgtaaaaaCCCGCTTCGGCGGGtttttgcttt,rnpB:rnpBp,rho-independent,garPLRK-rnpB,9175883,,None 
+RDBECOLITMC00264,2924166,2924191,reverse,gaaacgaaccGGGAGCGCTGTGAATACAGTGCTCCCtttttttatt,csrB:csrBp,rho-independent,csrB,9211896,,None 
+RDBECOLITMC00265,2536363,2536380,forward,cagtgaaaaaTGGCGCCCATCGGCGCCAtttttttatg,ptsHI-crr:ptsHp;crr:crrpI;crr:crrp2;ptsHI-crr:ptsHp4;ptsHI-crr:ptsHp5;ptsHI-crr:ptsHp3;ptsHI-crr:ptsHp2;ptsHI-crr:ptsHp1,rho-independent,ptsHI-crr,2457575,,None 
+RDBECOLITMC00266,3905636,3905687,reverse,ctaagcgggcAAAACCTGAAAAAAATTGCTTGATTCACGTCAGGCCGTTTTTTTCAGGTTTTtttttggagt,bglG:bglGp1;bglG:bglGp2,rho-independent,bglGFB,3034860,,None 
+RDBECOLITMC00267,4051241,4051280,forward,gttatgagtcAGGAAAAAAGGCGACAGAGTAATCTGTCGCCTTTTTTCTTtgcttgcttt,csrC:csrCp,rho-independent,csrC,12694612,,None 
+RDBECOLITMC00268,3575688,3575711,reverse,agtttgttcgCCCGGTAGTTGTGACGCTACCGGGttcttttcga,gntU;gntRKU;gntKU:gntKp,rho-independent,gntRKU,"8655507, 9135111",,None 
+RDBECOLITMC00269,1671703,1671720,forward,cagtaatgctGGCGCGCCCCCTCGCGCCtgaaaattac,asr:asrp;asr:asrp2,rho-independent,asr,10094685,,None 
+RDBECOLITMC00270,3577006,3577038,reverse,cgcttgttttAACAGCAGTAGGGTCTGTTTTACTGCTGCTGTTtttagtcatg,gntK:gntKp,rho-independent,gntRKU,9135111,,None 
+RDBECOLITMC00271,4549922,4549942,reverse,aaggacaccaGAGCCTGCCAATGGCAGGCTCagactgatga,gntP:gntPp,rho-independent,gntP,8550444,,None 
+RDBECOLITMC00272,1932085,1932105,reverse,aaagtcaaaaTGCCCGATCGAGGATCGGGCAtttttgtagc,edd-eda:eddp;eda:edap1;eda:edap2;eda:edap3,rho-independent,edd-eda,1624451,,None 
+RDBECOLITMC00273,498945,498980,reverse,catcatttcgATATGTTCCGGCGTGGCATTAAGCGCCGGAATATATtcatattttt,aes:aesp,rho-independent,aes,9401025,,None 
+RDBECOLITMC00274,3664943,3664961,forward,ctatcctcttCCCGGTCCCCTATGCCGGGttttttttat,gadY:gadYp,rho-independent,gadY,,,None 
+RDBECOLITMC00275,4055990,4056009,reverse,gatggctccgATGGATAACCAGCGCCGCTTaagtcaggaa,glnAZ:glnAp1;glnAZ:glnAp2,rho-independent,glnAZLG,2865194,,None 
+RDBECOLITMC00276,3902249,3902292,reverse,ttaaagcaccTTAATTATCGTCGCATTCAGAACAGTCTGGATGCGATGCGTTAAttctttcttt,bglGFB:bglGp1,rho-independent,bglGFB,3034860,,None 
+RDBECOLITMC00277,3906593,3906634,reverse,attcgcaggcAAAACCTGACATAACCAGAGAATACTGGTGAAGTCGGGTTTTtttgtttata,bglGFB:bglGp1,rho-independent,bglGFB,3034860,,None 
+RDBECOLITMC00278,424486,424508,forward,ccgtttaacaCGTTCTGGATGAAATCCATATCGcgatagcgca,malZ:malZp,rho-independent,malZ,1918057,,None 
+RDBECOLITMC00279,424530,424553,forward,cagccactgcTCTGACCACAAGTAATTGTTCAGAttgataaaac,malZ:malZp,rho-independent,malZ,1918057,,None 
+RDBECOLITMC00280,3348261,3348289,forward,tgacatacaaCTCCCTTCAAACTCCCCCCGACAATAAGAaaatcacgta,rpoN-hpf-ptsN-yhbJ-npr:rpoNp,rho-dependent,lptB-rpoN-hpf-ptsN-yhbJ,8025669,,None 
+RDBECOLITMC00281,3664915,3664935,reverse,gggaagaggaTAGTCTGCCGTCTCCAGACTAataaaccgtt,gadX:gadXp;gadAX:gadAp2;gadAX:gadAp,rho-independent,gadAX,11976288,,None 
+RDBECOLITMC00282,2356723,2356752,forward,ctcctttctgATGCCCGGTAAGCATGTGGTTACCGGGCATttttgcgtac,glpABC:glpAp,rho-dependent,glpABC,3286606,,None 
+RDBECOLITMC00283,3377756,3377782,reverse,acaattttcgAAAAAACCCGCTTCGGCGGGTTTTTTTatagctaaaa,rpsI;rplM-rpsI:rplMp,rho-independent,rplM-rpsI,15126466,,None 
+RDBECOLITMC00284,3058644,3058660,reverse,aatgatctgaCGGGGGAACCTCCCCCGttaaaaaaat,rpiA:rpiAp,rho-dependent,rpiA,8366047,,None 
+RDBECOLITMC00285,715211,715242,forward,acatttaataAAAAAAGGGCGGTCGCAAGATCGCCCTTTTTTacgtatgaca,seqA-pgm:seqAp,rho-independent,seqA-pgm,8083177,,None 
+RDBECOLITMC00286,1066833,1066857,forward,ataacagaaaACTCCCCCGCGAGAAGCGGGGGAGTcgctggttaa,agp:agpp,rho-independent,agp,2153660,,None 
+RDBECOLITMC00287,138801,138816,reverse,cagattgctgACAACGTGCGCGTTGTtcatgccgga,gcd:gcdp1;gcd:gcdp2,rho-independent,gcd,8419307,,None 
+RDBECOLITMC00288,2508424,2508447,reverse,cttccttttaTATCGGGAGGTAACTCTCCCGATAatcttttaaa,glk:glkp1;glk:glkp2;glk:glkp3;glk:glkp4,rho-independent,glk,9023215,,None 
+RDBECOLITMC00289,2007642,2007674,forward,gaggtgatttAAATTCATCCCCGGCGGCAAGCCGGGGAGATTTcattacggca,amyA:amyAp,rho-independent,amyA,1400215,,None 
+RDBECOLITMC00290,4114527,4114548,reverse,cgattgagccTTCCAGTCCTTCGGGACTGGAAtttttttgtt,glpFKX:glpFp,rho-independent,glpFKX,1400248,,None 
+RDBECOLITMC00291,2219660,2219682,reverse,atgctttagtAAGGGCGCGACGTTTGCGCCCTTtgtaggccgg,bglX:bglXp,rho-independent,bglX,8757730,,None 
+RDBECOLITMC00292,2842477,2842501,reverse,atgctaaattGCCCGATGCGCTGCGCTTATCGGGCcttcatggtt,hycABCDEFGHI:hycAp,rho-independent,hycABCDEFGHI,7851435,,None 
+RDBECOLITMC00293,3150552,3150576,reverse,cacaatgatgCCCGGTTGCTTTTCACAACCGGGCAtttttttaac,exbD:exbDp;exbBD:exbBp,rho-independent,exbBD,2670903,,None 
+RDBECOLITMC00294,705939,705965,forward,caacaatgacAAGCGGTGGAGATCTTCTCTGCCGCTTtttttttcat,nagE:nagEp,rho-independent,nagE,3284790,,None 
+RDBECOLITMC00295,1816258,1816282,forward,aaacacgtagGCCTGATAAGCGAAGCGCATCAGGCagttttgcgt,katE:katEp,rho-independent,katE,1987146,,None 
+RDBECOLITMC00296,707954,707978,forward,caaacaatccAAAACGCCGCGTTCAGCGGCGTTTTttctgctttt,glnS:glnSp2;glnS:glnSp;glnS:glnSp1,rho-independent,glnS,6086662,,None 
+RDBECOLITMC00297,3555795,3555820,forward,gtgtaagtttAGCCGGATAACGCGCCAGATCCGGCTtacatctctg,malT:malTp,rho-independent,malT,3015733,,None 
+RDBECOLITMC00298,3071431,3071450,reverse,aaaaaatcacAGGGCAGGGAAACCTGCCCTtgtttcagcg,pgk:pgkp2;pgk:pgkp3;epd-pgk:epdp2;pgk:pgkp1;epd-pgk:epdp,rho-independent,epd-pgk-fbaA,16102000,,None 
+RDBECOLITMC00299,1944273,1944303,reverse,tggcaatatgCCTGATGCGACGCTGTTCGCGTCTTACCAGGactaccagag,ruvAB:ruvAp2;ruvAB:ruvAp1,rho-independent,ruvAB,2842314,,None 
+RDBECOLITMC00300,1944219,1944248,reverse,cgaaccgtagGTCGGATAAGGCGCTCGCGCCGCATCCGACaaatgtgttc,ruvAB:ruvAp2;ruvAB:ruvAp1,rho-independent,ruvAB,,,None 
+RDBECOLITMC00301,1948662,1948693,reverse,ctgagtgaacTCCCATGAGCATAGATAACTATGTGAATGGGAtgagcgaagg,aspS:aspSp1;aspS:aspSp2,rho-independent,aspS,1885548,,None 
+RDBECOLITMC00302,9199,9226,forward,taatcattctTAGCGTGACCGGGAAGTCGGTCACGCTAcctcttctga,talB:talBp,rho-dependent,talB,7592346,,None 
+RDBECOLITMC00303,603377,603409,forward,caaccatccgAAACCGCTCTCATCCATTCGATGAGAGCGGTTTttttaattac,pheP:phePp,rho-independent,pheP,1711024,,None 
+RDBECOLITMC00304,900695,900725,reverse,tcttataatgAAGACGGACAACCCACTAAGTTGTCCGTCTTttttatttca,artPIQM:artPp1;artPIQM:artPp2;artPIQM:artPp3;artPIQM:artPp,rho-dependent,artPIQM,8801422,,None 
+RDBECOLITMC00305,899648,899665,reverse,cagcaatctgAAGCCGCACATGCGGCTTttttattgct,artJ:artJp,rho-dependent,artJ,8801422,,None 
+RDBECOLITMC00306,127590,127619,forward,tgatgtaagtAAAAGAGCCGGCCCAACGGCCGGCTTTTTTctggtaatct,aceEF:aceEp2;aceEF:aceEp1,rho-independent,pdhR-aceEF-lpdA,9868788,,None 
+RDBECOLITMC00307,1568904,1568930,reverse,gttataagacAAGGGAGCGATAATTCATCGCTCCCTTtttcgtgctt,gadC;gadBC:gadBp2;gadBC:gadBp,rho-independent,gadBC,10383761,,None 
+RDBECOLITMC00308,3559754,3559831,reverse,acggcttcccACGTCAGACCAAAACGCGCCAGGTATTTGCGTAGCCGATCCGCGTCATTGACGCTGGCTTTGCCCTGGCGCGAAACGTcaaaaagctg,glpEGR:glpEp;glpGR:glpGp;glpR:glpRp1;glpR:glpRp2,rho-independent,glpEGR,8955387,,None 
+RDBECOLITMC00309,884910,884938,forward,gggtaaaaaaATGCCTGACTGCTTTGTGCGATCAGGCATtctcgaatta,cmr:cmrp2;cmr:cmrp1,rho-independent,cmr,8655497,,None 
+RDBECOLITMC00310,3269959,3269992,reverse,gtcagtttcaCCTGTTTTACGTAAAAACCCGCTTCGGCGGGTTTttacttttgg,garPLRK-rnpB:garPp,rho-independent,garPLRK-rnpB,7489504,,None 
+RDBECOLITMC00311,4200582,4200601,forward,agttttaacgAAGGGGTGGTTTCACCCCTTttgtctttct,hupA:hupAp,rho-independent,hupA,2187099,,None 
+RDBECOLITMC00312,461730,461742,forward,ctaagcgttgTCCCCAGTGGGGAtgtgacgaag,hupB:hupBp1;hupB:hupBp2;hupB:hupBp3;hupB:hupBp4,rho-independent,hupB,2187099,,None 
+RDBECOLITMC00313,461759,461778,forward,gaagttcaagGGCGCATCTACTGATGTGCCttttttattt,hupB:hupBp1;hupB:hupBp2;hupB:hupBp3;hupB:hupBp4,rho-independent,hupB,2187099,,None 
+RDBECOLITMC00314,3956967,3956985,forward,tgcctcaattAGCGGCTCATGTAGCCGCTttttctgcgc,ilvA:ilvAp;ilvLXG_1G_2MEDA:ilvLp1;ilvLXG_1G_2MEDA:ilvLp2;ilvEDA:ilvEp3,rho-independent,ilvLXG_1G_2MEDA,2642900,,None 
+RDBECOLITMC00315,3956883,3956909,reverse,gcgcgggtagGCCTGATAAGCGAAGCGCTATCAGGCAtttttcccta,ilvY:ilvYp2;ilvY:ilvYp1,rho-independent,ilvY,2642900,,None 
+RDBECOLITMC00316,1346942,1346968,reverse,atctcctttcACGGCCCATTCCTCATGGATGGGCCGTttatttcccc,rnb:rnbp1;rnb:rnbp2,rho-dependent,rnb,8932710,,None 
+RDBECOLITMC00317,474263,474301,forward,caagcactgcAAAAAACAGCCGGACGGTTTTCACCTCCGGCTATTTTTTtaattgtgat,glnK-amtB:glnKp,rho-independent,glnK-amtB,8843440,,None 
+RDBECOLITMC00318,4338210,4338237,reverse,ttccgctgaaGGCGTAATTGTTTAAATAACATTACGCCgcctggcctt,adiA:adiAp,rho-independent,adiA,8383109,,None 
+RDBECOLITMC00319,926162,926186,reverse,aagaacgagtAAAAGGTCGGTTTAACCGGCCTTTTtattttgtga,infA:infAp2;infA:infAp1,rho-independent,infA-serW,1909328,,None 
+RDBECOLITMC00320,1086071,1086095,forward,gttatcggtgCAGAGCCCGGGCGAACCGGGCTTTGttttgggtgt,phoH:phoHp1;phoH:phoHp2,rho-independent,phoH,8444794,,None 
+RDBECOLITMC00321,427756,427786,forward,gctgttcagaTCACTGGTGCGCGCGGAGTCGCCGCCAGTGAgcaaacgctg,tgt-yajC:tgtp,rho-independent,yajC-secDF,7507921,,None 
+RDBECOLITMC00322,3754906,3754941,reverse,ggtattcattGCCTGATGCGACGCTTACGCGTCTTATCATGCCTACgggaacctga,aldB:aldBp,rho-independent,aldB,7768815,,None 
+RDBECOLITMC00323,1334845,1334874,forward,tgcgttatttTCGGCACCTTTTATGTAGCGAAGGTGCCGGaatatattct,cysB:cysBp,rho-independent,cysB,3032952,,None 
+RDBECOLITMC00324,710162,710180,reverse,aacgagaaaaGCCAACCTGCGGGTTGGCTtttttatgca,uof-fur:uofp;fldA-uof-fur:fldAp;fur:furpb;fur:furpa,rho-independent,fldA-uof-fur,,,None 
+RDBECOLITMC00325,1999541,1999571,reverse,gcataatgacAAAAAAGGGCGCTTTCACTAGCGCCTTTTTTatttacgcgt,tcyJ:tcyJp;fliAZY:fliAp1;fliAZY:fliAp2,rho-independent,fliAZY,8550423,,None 
+RDBECOLITMC00326,3211042,3211072,forward,tgtagttgtaAGGCCGTGCTTCCGAAAGGAATGCGCGGCTTattttcgttt,rpsU:rpsUp1,rho-independent,rpsU-dnaG-rpoD,6186393,,None 
+RDBECOLITMC00327,2873234,2873284,reverse,ttactgaggaTGAAGAAACCACATGGTCACTGCCTGGTGCCGTGGTCGGTTTTATCTCCTGgttatttgcg,cysDNC:cysDp,rho-independent,cysDNC,1316900,,None 
+RDBECOLITMC00328,4277927,4277957,reverse,aagatgaacaAAACTAAAGCGCCACAAGGGCGCTTTAGTTTgttttccggt,ryjA:ryjAp;soxR:soxRp,rho-independent,ryjA;soxR,11448770,,None 
+RDBECOLITMC00329,2006111,2006165,forward,cgaataatccGATTACGGCTACGCTTCTAATGTTCCCCTTGAATGGAGTCGAAGAATGCGTAATCccacgctgtt,fliDST:fliDp2,rho-independent,fliDST,1527488,,None 
+RDBECOLITMC00330,3091103,3091123,forward,acgcgtacaaCCGCGTGGGGAGACGACGCGGatttttaact,endA:endAp1;endA:endAp2,rho-independent,endA,7867949,,None 
+RDBECOLITMC00331,3091089,3091112,forward,ttaacccctaCCCCACGCGTACAACCGCGTGGGGagacgacgcg,endA:endAp1;endA:endAp2,rho-independent,endA,7867949,,None 
+RDBECOLITMC00332,1958447,1958473,reverse,tgctcgtaccAGGCCCCTGCAATTTCAACAGGGGCCTttttttatcc,yecM-cutC,rho-independent,yecM-cutC,7635807,,None 
+RDBECOLITMC00333,1260895,1260909,reverse,ggctcaaagaCCCGCTGCGGCGGGTttttttgtct,lolB-ispE-prs:lolBp;prs:prsp,rho-independent,lolB-ispE-prs,3009477,,None 
+RDBECOLITMC00334,1037608,1037634,forward,ccgacgtaaaAAGACGGTAAGTATCGCTTTCAGTCTTatgaatatcg,hyaABCDEF:hyaAp2;hyaABCDEF:hyaAp,rho-independent,hyaABCDEF,2180913,,None 
+RDBECOLITMC00335,431096,431122,reverse,ctgattatgaAAATGCCGGGATTTATTCCCGGCATTTctgattgtta,tsx:tsxp1;tsx:tsxp2,rho-independent,tsx,2265760,,None 
+RDBECOLITMC00336,2390005,2390023,reverse,agtcagaaagCCGCCGACATGCTCGGCGGtttttctgaa,nuoMN:nuoMp;nuoABCEFGHIJKLMN:nuoAp2;nuoABCEFGHIJKLMN:nuoAp1,rho-independent,nuoABCEFGHIJKLMN,7690854,,None 
+RDBECOLITMC00337,2428030,2428048,reverse,aactccgctgTTGCCCTGTTTCAGGGCAAttttgcaacc,ubiX:ubiXp;cvpA-purF-ubiX:cvpAp2;cvpA-purF-ubiX:cvpAp1,rho-independent,cvpA-purF-ubiX,3040734,,None 
+RDBECOLITMC00338,3640570,3640591,forward,cgtgttcctgAACGCCCGCATATGCGGGCGTTttgctttttg,uspA:uspAp1;uspA:uspAp2;uspA:uspAp3,rho-independent,uspA,1453957,,None 
+RDBECOLITMC00339,3739530,3739570,forward,aacagtaactTTTCCGGCTTCCCGTTCGTCAGTACCTCGGGAAGCCGCCAAccaggataaa,malS:malSp,rho-independent,malS,1544897,,None 
+RDBECOLITMC00340,3739595,3739620,forward,cagccctaatCAGCGTTGCAGGATAAAGCACCGCTCactcttcaac,malS:malSp,rho-independent,malS,1544897,,None 
+RDBECOLITMC00341,2854304,2854321,forward,atgaccttttGCACCGCTTTGCGGTGCTttcctggaag,hypABCDE:hypAp;hypBCDE:hypBp,rho-independent,hypABCDE-fhlA,1849603,,None 
+RDBECOLITMC00342,458731,458755,forward,agttaaccaaAAAGGGGGGATTTTATCTCCCCTTTaatttttcct,clpPX:clpPp3;clpPX:clpPp1;clpPX:clpPp2,rho-independent,clpX-lon,8226770,,None 
+RDBECOLITMC00343,3324942,3324969,reverse,atttgtaccgAAAACCCCGGGGCGTGCTCCGGGGTTTTttcttatcaa,rlmE-ftsH:rlmEp1;rlmE-ftsH:rlmEp2,rho-independent,rlmE-ftsH,8444796,,None 
+RDBECOLITMC00344,3599887,3599907,reverse,aagcagagaaCCCTGGATGAGAGTCCGGGGTttttgttttt,rpoH:rpoHp2;rpoH:rpoHp5;rpoH:rpoHp4;rpoH:rpoHp1;rpoH:rpoHp3;rpoH:rpoHp6,rho-independent,rpoH,6387714,,None 
+RDBECOLITMC00345,4120368,4120385,reverse,cattgtttgaTGGGGCTGAAAGGCCCCAtttttattgg,hslVU:hslVp,rho-independent,hslVU,8244018,,None 
+RDBECOLITMC00346,496998,497029,forward,ttcctgatgtAATGCCGGATGACCTTCGTGTCATCCGGCATTtttcttttca,htpG:htpGp1;htpG:htpGp2,rho-dependent,htpG,3299380,,None 
+RDBECOLITMC00347,1911652,1911679,reverse,agtaaatactAAAAAGCGCGTCCTGATCGACGCGCTTTttttatgccc,htpX:htpXp,rho-independent,htpX,1826904,,None 
+RDBECOLITMC00348,1821865,1821886,reverse,gtaacaacggAAACCGGCCATTGCGCCGGTTTtttttggcct,osmE:osmEp2;osmE:osmEp,rho-independent,osmE,7565114,,None 
+RDBECOLITMC00349,4345631,4345650,reverse,ggcagcatgcTGCCAGGTGATCCCCCTGGCcacctctttt,dcuB-fumB:dcuBp2;fumB:fumBp;dcuB-fumB:dcuBp1,rho-independent,dcuB-fumB,2656658,,None 
+RDBECOLITMC00350,951207,951266,reverse,tgtaattagaTTTGACTGAAATCGTACAGTAAAAAGCGTACAATAAAGGCTCCACGAAAGTGGGGCCTTTtttagcgcga,focA-pflB:focAp1;focA-pflB:focAp2;focA-pflB:focAp3;pflB:pflBp1;pflB:pflBp2;pflB:pflBp3;pflB:pflBp4;pflB:pflBp5,rho-independent,focA-pflB,2651404,,None 
+RDBECOLITMC00351,4366844,4366864,reverse,aaataaaaaaGGCACGTCAGATGACGTGCCTtttttcttgt,aspA:aspAp,rho-dependent,aspA-dcuA,2987841,,None 
+RDBECOLITMC00352,65800,65821,reverse,tcaaacgaaaCCAGGCTATACTCAAGCCTGGTtttttgatgg,araBAD:araBp,rho-independent,araBAD,3549454,,None 
+RDBECOLITMC00353,4378966,4378987,reverse,aatgtaaatcCGGCCCGCCTATGGCGGGCCGTtttgtatgga,frdABCD:frdAp2;frdABCD:frdAp,rho-independent,frdABCD,"6251026, 7010184",,None 
+RDBECOLITMC00354,3915508,3915530,reverse,aagcacaaaaGCCAGTCTGGAAACAGGCTGGCTtttttttgcg,atpBEFHAGDC:atpBp1;atpBEFHAGDC:atpBp2;atpIBEFHAGDC:atpIp,rho-independent,atpIBEFHAGDC,6395859,,None 
+RDBECOLITMC00355,3911810,3911830,reverse,aataaatggaTGCCCTGCGTAAGCGGGGCATttttcttcct,glmUS:glmUp1;glmUS:glmUp2,rho-dependent,glmUS,6206892,,None 
+RDBECOLITMC00356,3214943,3214962,forward,ctctgcacaaACGCCACCTTTTCGGTGGCGttttttatcg,rpsU-dnaG-rpoD:rpsUp1;rpsU-dnaG-rpoD:rpsUp2;rpsU-dnaG-rpoD:rpsUp3;rpoD:rpoDp1;rpoD:rpoDp2;rpoD:rpoDp3,rho-independent,rpsU-dnaG-rpoD,"6186393, 6222240, 6269063",,None 
+RDBECOLITMC00357,710118,710134,reverse,taagaaaagcGAGAGTTACAGCTCTCActtatttgtt,uof-fur:uofp;fldA-uof-fur:fldAp;fur:furpb;fur:furpa,rho-independent,fldA-uof-fur,2993806,,None 
+RDBECOLITMC00358,1080794,1080838,forward,gctccgccgtCACGGTTGCAGGAAAGCTAAGGGACTTAGCCTGCGGCGGTTTTGTttggcttcag,putP:putPp1;putP:putPp2;putP:putPp3;putP:putPp4;putP:putPp5,rho-independent,putP,3302614,,None 
+RDBECOLITMC00359,4377783,4377800,reverse,aattccatcgGGTCCGAATTTTCGGACCttttctccgc,ampC:ampCp,rho-independent,ampC,7559452,,None 
+RDBECOLITMC00360,4189599,4189613,forward,taacgtaaaaACCCGCTTCGGCGGGtttttttatg,rplKAJL-rpoBC:rplKp;rpoBC:rpoBp;rplJL-rpoBC:rplJp,rho-independent,rplKAJL-rpoBC,6278450,,None 
+RDBECOLITMC00361,3439581,3439595,reverse,cgtaaaaaaaCCCGCCCCGGCGGGTttttttatac,rpsMKD-rpoA-rplQ:rpsMp1;rpsMKD-rpoA-rplQ:rpsMp2,rho-independent,rpsMKD-rpoA-rplQ,2989779,,None 
+RDBECOLITMC00362,3811209,3811225,reverse,taacaaaaaaCCTCGCTCCGGCGGGGTtttttgttat,yicR-rpmBG:yicRp;rpmBG:rpmBp,rho-independent,yicR-rpmBG-mutM,7035835,,None 
+RDBECOLITMC00363,3308999,3309021,reverse,gttgccatttGCCCTCCGCTGCGGCGGGGGGCTtttaaccggg,metY-yhbC-nusA-infB-rbfA-truB-rpsO-pnp:metYp1;pnp:pnpp;rpsO-pnp:rpsOp;metY-yhbC-nusA-infB-rbfA-truB-rpsO-pnp:metYp2,rho-independent,metY-yhbC-nusA-infB-rbfA-truB-rpsO-pnp,2432069,,None 
+RDBECOLITMC00364,3448267,3448285,reverse,tacgaataaaCGGCTCAGAAATGAGCCGTttattttttc,rpsJ-rplCDWB-rpsS-rplV-rpsC-rplP-rpmC-rpsQ:rpsJp,rho-independent,rpsJ-rplCDWB-rpsS-rplV-rpsC-rplP-rpmC-rpsQ,6222285,,None 
+RDBECOLITMC00365,4621635,4621659,forward,tgccttgtgaAGCCGGAGCGGGAGACTGCTCCGGCtttttagtat,deoBD:deoBp;deoCABD:deoCp1;deoCABD:deoCp2,rho-independent,deoCABD,3299264,,None 
+RDBECOLITMC00366,4639538,4639572,forward,taaggttgaaAAATAAAAACGGCGCTAAAAAGCGCCGTTTTTTTTgacggtggta,creD:creDp;creABCD:creAp,rho-independent,creABCD,3531171,,None 
+RDBECOLITMC00367,2522698,2522720,reverse,aaaaggattcGCGGCTCTGCTCTTCAGAGCTGCttttatgata,xapB:xapBp2;xapB:xapBp3;xapAB:xapAp2;xapAB:xapAp,rho-independent,xapAB,,,None 
+RDBECOLITMC00368,3722291,3722310,reverse,gttattaaatAGCCTGCCATCTGGCAGGCTttttttatcg,glyQS:glyQp,rho-independent,glyQS,6309809,,None 
+RDBECOLITMC00369,4268317,4268340,forward,atgcaggaaaGCAGGCTGGAGCTACCCAGCCTGCagtgaaatta,tyrB:tyrBp,rho-independent,tyrB,3521591,,None 
+RDBECOLITMC00370,4480932,4480957,reverse,tgaaaacgaaGGCCGGAGCATGCTCCGGCCTTTTTTatctcttaca,valS:valSp1;valS:valSp2,rho-independent,holC-valS,3275659,,None 
+RDBECOLITMC00371,4599620,4599635,reverse,ctgcccttttCCCTGCTCCTGGACGGttttacccct,yjjB-dnaTC-yjjA:yjjBp;dnaTC-yjjA:dnaTp,rho-dependent,yjjB-dnaTC-yjjA,2844800,,None
